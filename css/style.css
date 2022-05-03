@@ -98,27 +98,6 @@ footer a:hover {
   align-items: center;
   justify-content: center;
 }
-.icon-rounded.fa-grip {
-  background-color: #67809F;
-}
-.icon-rounded.fa-desktop {
-  background-color: #4183D7;
-}
-.icon-rounded.fa-signal {
-  background-color: #2ECC71;
-}
-.icon-rounded.fa-phone {
-  background-color: #D64541;
-}
-.icon-rounded.fa-code {
-  background-color: #926FB1;
-}
-.icon-rounded.fa-shield-halved {
-  background-color: #F62459;
-}
-.icon-rounded.fa-graduation-cap {
-  background-color: #CE4125;
-}
 
 .card {
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
