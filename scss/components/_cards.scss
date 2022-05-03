@@ -1,11 +1,17 @@
 @use '../abstracts/colors' as c;
 .card {
+    text-decoration: none;
+    color: c.$primary;
+    text-align: center;
+    box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition: .5s ease;
     .btn {
         color:c.$white;
     }
-    box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
     &:hover {
         color: c.$white;
+        transform: translateY(-1rem);
         &.software {
             background-color: c.$bespoke--software;
         }

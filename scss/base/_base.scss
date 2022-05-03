@@ -1,5 +1,9 @@
 @use '../abstracts' as *;
 
+a {
+    text-decoration: none;
+}
+
 .services {
     width: 225px;
     margin-bottom: 30px;
