@@ -106,8 +106,56 @@ footer a:hover {
   color: #fff;
 }
 .card:hover {
-  background-color: #67809F;
   color: #fff;
+}
+.card:hover.software {
+  background-color: #67809F;
+}
+.card:hover .besp-soft {
+  background-color: #fff;
+  color: #67809F;
+}
+.card:hover.it {
+  background-color: #4183D7;
+}
+.card:hover .it-sup {
+  background-color: #fff;
+  color: #4183D7;
+}
+.card:hover.digital {
+  background-color: #2ECC71;
+}
+.card:hover .dig-mark {
+  background-color: #fff;
+  color: #2ECC71;
+}
+.card:hover.telecoms {
+  background-color: #D64541;
+}
+.card:hover .tel-serv {
+  background-color: #fff;
+  color: #D64541;
+}
+.card:hover.web {
+  background-color: #926FB1;
+}
+.card:hover .web-des {
+  background-color: #fff;
+  color: #926FB1;
+}
+.card:hover.cyber {
+  background-color: #F62459;
+}
+.card:hover .cyb-sec {
+  background-color: #fff;
+  color: #F62459;
+}
+.card:hover.developer {
+  background-color: #CE4125;
+}
+.card:hover .dev-train {
+  background-color: #fff;
+  color: #CE4125;
 }
 
 /*# sourceMappingURL=style.css.map */
