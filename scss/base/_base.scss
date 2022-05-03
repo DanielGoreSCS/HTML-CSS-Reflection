@@ -1,3 +1,5 @@
+@use '../abstracts' as *;
+
 .services {
     width: 225px;
     margin-bottom: 30px;
@@ -5,4 +7,23 @@
 .offices {
     width: 225px;
     margin-bottom: 30px;
+}
+
+footer {
+    background-color: $primary;
+    color: $white;
+}
+
+.welcome {
+    background-color: $primary;
+    color: $white;
+}
+
+footer a {
+    text-decoration: none;
+    color: $white;
+    &:hover {
+        text-decoration: underline $white;
+        color: $white;
+    }
 }

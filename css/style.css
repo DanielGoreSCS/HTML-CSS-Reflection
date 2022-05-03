@@ -8,4 +8,63 @@
   margin-bottom: 30px;
 }
 
+footer {
+  background-color: #333645;
+  color: #fff;
+}
+
+.welcome {
+  background-color: #333645;
+  color: #fff;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+footer a:hover {
+  text-decoration: underline #fff;
+  color: #fff;
+}
+
+.navbar {
+  background-color: #333645;
+}
+
+.fa-grip {
+  color: #67809F;
+}
+
+.fa-desktop {
+  color: #4183D7;
+}
+
+.fa-signal {
+  color: #2ECC71;
+}
+
+.fa-phone {
+  color: #D64541;
+}
+
+.fa-code {
+  color: #926FB1;
+}
+
+.fa-shield-halved {
+  color: #F62459;
+}
+
+.fa-graduation-cap {
+  color: #CE4125;
+}
+
+.card {
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+}
+.card:hover {
+  background-color: #67809F;
+  color: #fff;
+}
+
 /*# sourceMappingURL=style.css.map */

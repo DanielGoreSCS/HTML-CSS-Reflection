@@ -1,0 +1,29 @@
+@use '../abstracts/colors' as c;
+
+.fa-grip {
+    color: c.$bespoke--software;
+}
+
+.fa-desktop {
+    color: c.$it--support;
+}
+
+.fa-signal {
+    color: c.$digital-marketing;
+}
+
+.fa-phone {
+    color: c.$telecoms-services;
+}
+
+.fa-code {
+    color: c.$web--design;
+}
+
+.fa-shield-halved {
+    color: c.$cyber--security;
+}
+
+.fa-graduation-cap {
+    color: c.$developer--training;
+}
