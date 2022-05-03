@@ -111,6 +111,7 @@ footer a:hover {
   text-decoration: none;
   color: #333645;
   text-align: center;
+  padding: 30px;
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   transition: 0.5s ease;
@@ -118,8 +119,10 @@ footer a:hover {
 .card .btn {
   color: #fff;
 }
-.card:hover {
+.card-services:hover {
   color: #fff;
+}
+.card:hover {
   transform: translateY(-1rem);
 }
 .card:hover.software {

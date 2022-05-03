@@ -3,14 +3,17 @@
     text-decoration: none;
     color: c.$primary;
     text-align: center;
+    padding: 30px;
     box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     transition: .5s ease;
     .btn {
         color:c.$white;
     }
-    &:hover {
+    &-services:hover {
         color: c.$white;
+    }
+    &:hover {
         transform: translateY(-1rem);
         &.software {
             background-color: c.$bespoke--software;
