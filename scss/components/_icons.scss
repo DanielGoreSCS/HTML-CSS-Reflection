@@ -27,3 +27,43 @@
 .fa-graduation-cap {
     color: c.$developer--training;
 }
+
+.icon-rounded {
+    width: 65px;
+    height: 65px;
+    color: c.$white;
+    border-radius: 50%;
+    border: none;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    &.fa-grip {
+        background-color: c.$bespoke--software;
+    }
+    
+    &.fa-desktop {
+        background-color: c.$it--support;
+    }
+    
+    &.fa-signal {
+        background-color: c.$digital-marketing;
+    }
+    
+    &.fa-phone {
+        background-color: c.$telecoms-services;
+    }
+    
+    &.fa-code {
+        background-color: c.$web--design;
+    }
+    
+    &.fa-shield-halved {
+        background-color: c.$cyber--security;
+    }
+    
+    &.fa-graduation-cap {
+        background-color: c.$developer--training;
+    }
+}

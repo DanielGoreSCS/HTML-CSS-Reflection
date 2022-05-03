@@ -1,3 +1,31 @@
+.besp-soft {
+  background-color: #67809F;
+}
+
+.it-sup {
+  background-color: #4183D7;
+}
+
+.dig-mark {
+  background-color: #2ECC71;
+}
+
+.tel-serv {
+  background-color: #D64541;
+}
+
+.web-des {
+  background-color: #926FB1;
+}
+
+.cyb-sec {
+  background-color: #F62459;
+}
+
+.dev-train {
+  background-color: #CE4125;
+}
+
 .services {
   width: 225px;
   margin-bottom: 30px;
@@ -59,8 +87,44 @@ footer a:hover {
   color: #CE4125;
 }
 
+.icon-rounded {
+  width: 65px;
+  height: 65px;
+  color: #fff;
+  border-radius: 50%;
+  border: none;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-rounded.fa-grip {
+  background-color: #67809F;
+}
+.icon-rounded.fa-desktop {
+  background-color: #4183D7;
+}
+.icon-rounded.fa-signal {
+  background-color: #2ECC71;
+}
+.icon-rounded.fa-phone {
+  background-color: #D64541;
+}
+.icon-rounded.fa-code {
+  background-color: #926FB1;
+}
+.icon-rounded.fa-shield-halved {
+  background-color: #F62459;
+}
+.icon-rounded.fa-graduation-cap {
+  background-color: #CE4125;
+}
+
 .card {
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+}
+.card .btn {
+  color: #fff;
 }
 .card:hover {
   background-color: #67809F;
