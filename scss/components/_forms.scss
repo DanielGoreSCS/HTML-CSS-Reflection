@@ -1,0 +1,10 @@
+@use '../abstracts/colors' as c;
+
+.form-control {
+    height: 47px;
+    padding: 5px 15px;
+    border-color: #ccc;
+}
+.form-check-input:active {
+    background-color: c.$primary;
+}

@@ -26,8 +26,24 @@
   background-color: #CE4125;
 }
 
+.quote-author {
+  color: #A3A8AC;
+}
+
 a {
   text-decoration: none;
+}
+
+.hero-img {
+  background-image: url("../../img/home-oaVs.webp") no-repeat top center;
+  background-color: #ccc;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-text {
+  color: #fff;
 }
 
 .services {
@@ -48,6 +64,14 @@ footer {
 .welcome {
   background-color: #333645;
   color: #fff;
+}
+
+.form {
+  background-color: #DDD;
+}
+
+header {
+  background-color: #fff;
 }
 
 footer a {
@@ -116,8 +140,26 @@ footer a:hover {
   border-radius: 15px;
   transition: 0.5s ease;
 }
-.card .btn {
-  color: #fff;
+.card-services {
+  height: 300px;
+}
+.card-news-1 *.card-title {
+  color: #926fb1;
+}
+.card-news-1 *.btn {
+  background-color: #926fb1;
+}
+.card-news-2 *.card-title {
+  color: #2ecc71;
+}
+.card-news-2 *.btn {
+  background-color: #2ecc71;
+}
+.card-news-3 *.card-title {
+  color: #67809f;
+}
+.card-news-3 *.btn {
+  background-color: #67809f;
 }
 .card-services:hover {
   color: #fff;
@@ -173,6 +215,44 @@ footer a:hover {
 .card:hover .dev-train {
   background-color: #fff;
   color: #CE4125;
+}
+
+.btn {
+  color: #fff;
+}
+.btn:hover {
+  color: #fff;
+}
+.btn.google {
+  background-color: #4387F6;
+}
+.btn.google:hover {
+  background-color: #1268f4;
+}
+.btn.trustpilot {
+  background-color: #00B67B;
+}
+.btn.trustpilot:hover {
+  background-color: #008359;
+}
+.btn.read-more {
+  background-color: #282b36;
+}
+.btn.read-more:hover {
+  background-color: #121419;
+}
+.btn.form-submit {
+  background-color: #333645;
+}
+
+.form-control {
+  height: 47px;
+  padding: 5px 15px;
+  border-color: #ccc;
+}
+
+.form-check-input:active {
+  background-color: #333645;
 }
 
 /*# sourceMappingURL=style.css.map */

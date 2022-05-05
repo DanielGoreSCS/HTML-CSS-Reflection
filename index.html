@@ -113,9 +113,11 @@
         </nav>
     </header>
     <main>
-        <div class="container">
-            <h1>The East Of England&apos;s Leading Technology Company</h1>
-            <p>With offices in Cambridge&comma; Wymondham & Great Yarmouth</p>
+        <div class="hero-img">
+            <div class="container hero-text text-center py-4">
+                <h1>The East Of England&apos;s Leading Technology Company</h1>
+                <p>With offices in Cambridge&comma; Wymondham & Great Yarmouth</p>
+            </div>
         </div>
         <div class="container py-4">
             <h2>Our Services</h2>
@@ -206,71 +208,79 @@
                 </div>
             </div>
         </div>
-        <div class="welcome">
-            <div class="container py-4">
+        <div class="welcome py-4">
+            <div class="container">
                 <div class="mb-4">
                     <h2>Welcome To Netmatters</h2>
                     <p>Netmatters Ltd is a leading web design&comma; IT support and digital marketing agency based in the East of England with offices in Cambridge&comma; Wymondham and Great Yarmouth</p>
                     <p>We offer a wide range of digital services to businesses including software and website development&comma; IT Support&comma; telecoms services&comma; digital marketing services and cyber security&period;</p>
                     <p>Founded in 2008&comma; we partner with business from all industry sectors to help them gain new prospects&comma; nature existing leads and further grow their sales&period;</p>
-                    <a class="btn btn-primary" href="#">Read More &rarr;</a>
+                    <div>
+                        <a class="btn read-more" href="#">Read More &rarr;</a>
+                    </div>
                 </div>
                 <div>
                     <h2>What Our Clients Think</h2>
                     <p>Great service&period; Took the reigns and did all the leg work for us&period; Ensured we were happy with our website and made all changes necessary as and when asked to do so&period;</p>
-                    <span>Oliver King &hyphen; SEA Scaffolding</span>
-                    <a class="btn btn-primary" href="#">Google Reviews &rarr;</a>
-                    <a class="btn btn-primary" href="#">Trustpilot Reviews &rarr;</a>
+                    <span class="quote-author">Oliver King &hyphen; SEA Scaffolding</span>
+                    <div>
+                        <a class="btn google" href="#">Google Reviews &rarr;</a>
+                        <a class="btn trustpilot" href="#">Trustpilot Reviews &rarr;</a>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
-    <aside class="container">
+    <aside class="container py-4">
         <h2 class="text-center">Latest News</h2>
         <div class="row">
             <div class="col-sm-6 col-lg-4">
                 <article class="card">
-                    <div class="card-body">
+                    <div class="card-body card-news-1">
                         <h5 class="card-title">A Revolutionised IT Infrastructure&colon; Case Study</h5>
                         <p class="card-text">Netmatters has been building a strong reputation across Norfolk and Cambridge as the leading full&hyphen;se&period;&period;&period;</p>
-                        <span class="btn btn-primary">Read More</a>
+                        <span class="btn">Read More</span>
                     </div>
                 </article>
             </div>
             <div class="col-sm-6 col-lg-4">
                 <article class="card">
-                    <div class="card-body">
+                    <div class="card-body card-news-2">
                         <h5 class="card-title">Michael Grimshaw Achieves Long Service Award</h5>
                         <p class="card-text">The team at Netmatters are happy to congratulate Michael Grimshaw for achieving the Long Service Awa&period;&period;&period;</p>
-                        <span class="btn btn-primary">Read More</a>
+                        <span class="btn">Read More</span>
                     </div>
                 </article>
             </div>
             <div class="col-sm-6 col-lg-4">
                 <article class="card">
-                    <div class="card-body">
+                    <div class="card-body card-news-3">
                         <h5 class="card-title">Where to Spend Your Marketing Budget in 2022</h5>
                         <p class="card-text">Marketing is an ever&hyphen;changing part of business&comma; and the consumer landscape has changed considerably&period;&period;&period;</p>
-                        <span class="btn btn-primary">Read More</a>
+                        <span class="btn">Read More</span>
                     </div>
                 </article>
             </div>
         </div>
     </aside>
-    <section>
+    <section class="form py-4">
         <div class="container">
             <h2>Email Newsletter Sign&hyphen;Up</h2>
             <form>
-                <input class="mb-4" type="text">
-                <input class="mb-4" type="text"><br>
-                <input type="checkbox">
-                <span>Please tick this box if you wish to recieve marketing information from us&period; Please see our Privacy Policy for more information on how we use your data&period;</span><br>
-                <button type="button">Subscribe</button>
+                <label for="newsletter-name">Your Name <span>*</span></label>
+                <input class="form-control mb-4" id="newsletter-name" type="text">
+                <label for="newsletter-email">Your Email <span>*</span></label>
+                <input class="form-control mb-4" id="newsletter-email" type="text"><br>
+                <div class="form-check mb-4">
+                    <input class="form-check-input" id="form-checkbox" type="checkbox">
+                    <label class="form-check-label" for="form-checkbox">Please tick this box if you wish to recieve marketing information from us&period; Please see our Privacy Policy for more information on how we use your data&period;</label><br>
+                </div>
+                <button class="btn form-submit" type="button">Subscribe</button>
             </form>
         </div>
     </section>
     <footer>
-        <div class="container pt-4 mt-4">
+        <div class="container pt-4">
             <div class="row justify-content-between">
                 <div class="col-lg-6 row justify-content-center justify-content-sm-even">
                     <div class="services col-sm-6">

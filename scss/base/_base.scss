@@ -4,6 +4,18 @@ a {
     text-decoration: none;
 }
 
+.hero-img {
+    background-image: url('../../img/home-oaVs.webp') no-repeat top center;
+    background-color: #ccc;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-text {
+    color: $white;
+}
+
 .services {
     width: 225px;
     margin-bottom: 30px;
@@ -23,6 +35,12 @@ footer {
     color: $white;
 }
 
+.form {
+    background-color: $form;
+}
+header {
+    background-color: $white;
+}
 footer a {
     text-decoration: none;
     color: $white;
