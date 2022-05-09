@@ -28,4 +28,10 @@
     &.form-submit {
         background-color: c.$primary;
     }
+    &-support {
+        background-color: c.$support;
+    }
+    &-search {
+        background-color: c.$search;
+    }
 }

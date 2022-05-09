@@ -266,6 +266,12 @@ footer a:hover {
 .btn.form-submit {
   background-color: #333645;
 }
+.btn-support {
+  background-color: #4183D7;
+}
+.btn-search {
+  background-color: #999AA2;
+}
 
 .form-control {
   height: 47px;
