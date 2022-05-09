@@ -1,5 +1,9 @@
 @use '../abstracts/colors' as c;
 
+.fa-solid {
+    width: 100%;
+}
+
 .fa-grip {
     color: c.$bespoke--software;
 }
@@ -26,4 +30,16 @@
 
 .fa-graduation-cap {
     color: c.$developer--training;
+}
+
+.icon-rounded {
+    width: 65px;
+    height: 65px;
+    color: c.$white;
+    border-radius: 50%;
+    border: none;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }

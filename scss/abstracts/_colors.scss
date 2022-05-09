@@ -1,5 +1,7 @@
 $primary: #333645;
+$primary-dark: darken($primary, 5%);
 $white: #fff;
+$quote-author: #A3A8AC;
 
 $bespoke--software: #67809F;
 
@@ -14,3 +16,46 @@ $web--design: #926FB1;
 $cyber--security: #F62459;
 
 $developer--training: #CE4125;
+
+$google: #4387F6;
+
+$trustpilot: #00B67B;
+
+$articles:  (
+    "1": #926fb1,
+    "2": #2ecc71,
+    "3": #67809f
+    
+);
+$form: #DDD;
+.besp-soft {
+    background-color: $bespoke--software;
+}
+
+.it-sup {
+    background-color: $it--support;
+}
+
+.dig-mark {
+    background-color: $digital-marketing;
+}
+
+.tel-serv {
+    background-color: $telecoms-services;
+}
+
+.web-des {
+    background-color: $web--design;
+}
+
+.cyb-sec {
+    background-color: $cyber--security;
+}
+
+.dev-train {
+    background-color: $developer--training;
+}
+
+.quote-author {
+    color: $quote-author;
+}

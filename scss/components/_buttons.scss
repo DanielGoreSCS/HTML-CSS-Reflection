@@ -1,0 +1,31 @@
+@use '../abstracts/colors' as c;
+
+.btn {
+    color: c.$white;
+    &:hover {
+        color: c.$white;
+    }
+    &.google {
+        background-color: c.$google;
+        &:hover {
+            background-color: darken(c.$google, 10%);
+        }
+    }
+
+    &.trustpilot {
+        background-color: c.$trustpilot;
+        &:hover {
+            background-color: darken(c.$trustpilot, 10%);
+        }
+    }
+
+    &.read-more {
+        background-color: c.$primary-dark;
+        &:hover {
+            background-color: darken(c.$primary-dark, 10%);
+        }
+    }
+    &.form-submit {
+        background-color: c.$primary;
+    }
+}

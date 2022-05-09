@@ -1,8 +1,92 @@
 @use '../abstracts/colors' as c;
 .card {
+    text-decoration: none;
+    color: c.$primary;
+    text-align: center;
+    padding: 30px;
     box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
-    &:hover {
-        background-color: c.$bespoke--software;
+    border-radius: 15px;
+    transition: .5s ease;
+    &-services {
+        height: 100%;
+    }
+    &-news-1 * {
+        &.card-title {
+            color: map-get($map: c.$articles, $key: "1");
+        }
+        &.btn {
+            background-color: map-get($map: c.$articles, $key: "1");
+        }
+    }
+    &-news-2 * {
+        &.card-title {
+            color: map-get($map: c.$articles, $key: "2");
+        }
+        &.btn {
+            background-color: map-get($map: c.$articles, $key: "2");
+        }
+    }
+    &-news-3 * {
+        &.card-title {
+            color: map-get($map: c.$articles, $key: "3");
+        }
+        &.btn {
+            background-color: map-get($map: c.$articles, $key: "3");
+        }
+    }
+    &-services:hover {
         color: c.$white;
+    }
+    &:hover {
+        transform: translateY(-1rem);
+        &.software {
+            background-color: c.$bespoke--software;
+        }
+        & .besp-soft {
+            background-color: c.$white;
+            color: c.$bespoke--software;
+        }
+        &.it {
+            background-color: c.$it--support;
+        }
+        & .it-sup {
+            background-color: c.$white;
+            color: c.$it--support;
+        }
+        &.digital {
+            background-color: c.$digital-marketing;
+        }
+        & .dig-mark {
+            background-color: c.$white;
+            color: c.$digital-marketing;
+        }
+        &.telecoms {
+            background-color: c.$telecoms-services;
+        }
+        & .tel-serv {
+            background-color: c.$white;
+            color: c.$telecoms-services;
+        }
+        &.web {
+            background-color: c.$web--design;
+        }
+        & .web-des {
+            background-color: c.$white;
+            color: c.$web--design;
+        }
+        &.cyber {
+            background-color: c.$cyber--security;
+        }
+        & .cyb-sec {
+            background-color: c.$white;
+            color: c.$cyber--security;
+        }
+        &.developer {
+            background-color: c.$developer--training;
+        }
+        & .dev-train {
+            background-color: c.$white;
+            color: c.$developer--training;
+        }
     }
 }

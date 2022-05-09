@@ -16,30 +16,56 @@
 <body>
     <header>
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg"> 
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <a class="navbar-brand" href="#"><img src="img/f-logo.png" alt="Netmatters logo"></a>
+                </div>
+                <div class="col-6 row">
+                    <div class="col-4">
+                        <a class="btn google" href="#">Support</a>
+                        <a class="btn google" href="#">Contact</a>
+                    </div>
+                    <div class="col-7">
+                        <div class="input-group mb-3">
+                            <input class="form-control" type="text"  placeholder="Search..." aria-label="Search..." aria-describedby="button-addon2">
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <button class="navbar-toggler navbar-dark bg-dark" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg py-lg-3"> 
             <div class="container">
-                <a class="navbar-brand" href="#">Netmatters</a>
-                <button class="navbar-toggler navbar-dark bg-dark" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav justify-content-center">
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
                         <li class="nav-item dropdown"> <!-- Bespoke Software -->
-                            <i class="fa-solid fa-grip mx-auto"></i>
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Bespoke Software</a>
+                            <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                                <span><i class="fa-solid fa-grip"></i></span>
+                                <small>Bespoke</small>
+                                Software
+                            </a>
                             <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Workflow</a></li>
-                            <li><a class="dropdown-item" href="#">Automation</a></li>
-                            <li><a class="dropdown-item" href="#">Intergration</a></li>
-                            <li><a class="dropdown-item" href="#">Database</a></li>
-                            <li><a class="dropdown-item" href="#">SharePoint</a></li>
-                            <li><a class="dropdown-item" href="#">Management</a></li>
-                            <li><a class="dropdown-item" href="#">Navision</a></li>
+                                <li><a class="dropdown-item" href="#">Workflow</a></li>
+                                <li><a class="dropdown-item" href="#">Automation</a></li>
+                                <li><a class="dropdown-item" href="#">Intergration</a></li>
+                                <li><a class="dropdown-item" href="#">Database</a></li>
+                                <li><a class="dropdown-item" href="#">SharePoint</a></li>
+                                <li><a class="dropdown-item" href="#">Management</a></li>
+                                <li><a class="dropdown-item" href="#">Navision</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown"> <!-- IT Support -->
-                            <i class="fa-solid fa-desktop mx-auto"></i>
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">IT Support</a>
+                            <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                                <i class="fa-solid fa-desktop"></i>
+                                <small>IT</small>
+                                Support
+                            </a>
                             <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Managed IT</a></li>
                             <li><a class="dropdown-item" href="#">Business IT</a></li>
@@ -50,8 +76,11 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown"> <!-- Digital Marketing -->
-                            <i class="fa-solid fa-signal mx-auto"></i>
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Digital Marketing</a>
+                            <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                                <i class="fa-solid fa-signal"></i>
+                                <small>Digital</small>
+                                Marketing
+                            </a>
                             <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Search &lpar;SEO&rpar;</a></li>
                             <li><a class="dropdown-item" href="#">Paid &lpar;PPC&rpar;</a></li>
@@ -62,8 +91,11 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown"> <!-- Telecoms Services -->
-                            <i class="fa-solid fa-phone mx-auto"></i>
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Telecoms Services</a>
+                            <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                                <i class="fa-solid fa-phone"></i>
+                                <small>Telecoms</small>
+                                Services
+                            </a>
                             <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Business Mobile</a></li>
                             <li><a class="dropdown-item" href="#">Hosted VoIP</a></li>
@@ -74,8 +106,11 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown"> <!-- Web Design -->
-                            <i class="fa-solid fa-code mx-auto"></i>
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Web Design</a>
+                            <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                                <i class="fa-solid fa-code"></i>
+                                <small>Web</small>
+                                Design
+                            </a>
                             <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Stylish Websites</a></li>
                             <li><a class="dropdown-item" href="#">eCommerce Stores</a></li>
@@ -86,8 +121,11 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown"> <!-- Cyber Security -->
-                            <i class="fa-solid fa-shield-halved mx-auto"></i>
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Cyber Security</a>
+                            <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                                <i class="fa-solid fa-shield-halved"></i>
+                                <small>Cyber</small>
+                                Security
+                            </a>
                             <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Assessment</a></li>
                             <li><a class="dropdown-item" href="#">Management</a></li>
@@ -98,8 +136,11 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown"> <!-- Developer Course -->
-                            <i class="fa-solid fa-graduation-cap mx-auto"></i>
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Developer Course</a>
+                            <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <small>Developer</small>
+                                Course
+                            </a>
                             <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Train For A Career In Tech</a></li>
                             <li><a class="dropdown-item" href="#">Scion Scheme Frequently Asked Questions</a></li>
@@ -113,150 +154,193 @@
         </nav>
     </header>
     <main>
-        <div class="container">
-            <h1>The East Of England&apos;s Leading Technology Company</h1>
-            <p>With offices in Cambridge&comma; Wymondham & Great Yarmouth</p>
+        <div class="hero-img">
+            <div class="container hero-text text-center py-4">
+                <h1>The East Of England&apos;s Leading Technology Company</h1>
+                <p>With offices in Cambridge&comma; Wymondham & Great Yarmouth</p>
+            </div>
         </div>
-        <div class="container">
+        <div class="container py-4">
             <h2>Our Services</h2>
             <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card pt-4">
-                        <i class="fa-solid fa-grip mx-auto"></i>
-                        <div class="card-body">
-                            <h5 class="card-title">Bespoke Software</h5>
-                            <p class="card-text">Tailored software solutions to improve business productivity and online profits&period;</p>
-                            <a href="#" class="btn btn-primary">Read More</a>
+                <div class="col-md-4 mt-4">
+                    <a href="#">
+                        <div class="card card-services software pt-4">
+                            <i class="fa-solid fa-grip icon-rounded besp-soft fa-2x mx-auto"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Bespoke Software</h5>
+                                <p class="card-text">Tailored software solutions to improve business productivity and online profits&period;</p>
+                                <span class="btn besp-soft">Read More</span>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card pt-4">
-                        <i class="fa-solid fa-desktop mx-auto"></i>
-                        <div class="card-body">
-                            <h5 class="card-title">IT Support</h5>
-                            <p class="card-text">Remotely managed IT services that is catered to your businesses needs&comma; adds value &amp; reduces costs&period;</p>
-                            <a href="#" class="btn btn-primary">Read More</a>
+                <div class="col-md-4 mt-4">
+                    <a href="#">
+                        <div class="card card-services it pt-4">
+                            <i class="fa-solid fa-desktop icon-rounded it-sup fa-2x mx-auto"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">IT Support</h5>
+                                <p class="card-text">Remotely managed IT services that is catered to your businesses needs&comma; adds value &amp; reduces costs&period;</p>
+                                <span class="btn it-sup">Read More</span>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card pt-4">
-                        <i class="fa-solid fa-signal mx-auto"></i>
-                        <div class="card-body">
-                            <h5 class="card-title">Digital Marketing</h5>
-                            <p class="card-text">Driven brand awareness &amp; ROI through creative digital marketing campaigns&period;</p>
-                            <a href="#" class="btn btn-primary">Read More</a>
+                <div class="col-md-4 mt-4">
+                    <a href="#">
+                        <div class="card card-services digital pt-4">
+                            <i class="fa-solid fa-signal icon-rounded dig-mark fa-2x mx-auto"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Digital Marketing</h5>
+                                <p class="card-text">Driven brand awareness &amp; ROI through creative digital marketing campaigns&period;</p>
+                                <span class="btn dig-mark">Read More</span>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                <div class="col-md-6 col-lg-3 mb-4">
-                    <div class="card pt-4">
-                        <i class="fa-solid fa-phone mx-auto"></i>
-                        <div class="card-body">
-                            <h5 class="card-title">Telecoms Services</h5>
-                            <p class="card-text">Stay connected with bespoke telecoms solutions when you need it most&period;</p>
-                            <a href="#" class="btn btn-primary">Read More</a>
+                <div class="col-md-6 col-lg-3 mt-4">
+                    <a href="#">
+                        <div class="card card-services telecoms pt-4">
+                            <i class="fa-solid fa-phone icon-rounded tel-serv fa-2x mx-auto"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Telecoms Services</h5>
+                                <p class="card-text">Stay connected with bespoke telecoms solutions when you need it most&period;</p>
+                                <span class="btn tel-serv">Read More</span>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                <div class="col-md-6 col-lg-3 mb-4">
-                    <div class="card pt-4">
-                        <i class="fa-solid fa-code mx-auto"></i>
-                        <div class="card-body">
-                            <h5 class="card-title">Web Design</h5>
-                            <p class="card-text">User&hyphen;centric design for businesses looking to make a lasting impression&period;</p>
-                            <a href="#" class="btn btn-primary">Read More</a>
+                <div class="col-md-6 col-lg-3 mt-4">
+                    <a href="#">
+                        <div class="card card-services web pt-4">
+                            <i class="fa-solid fa-code icon-rounded web-des fa-2x mx-auto"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Web Design</h5>
+                                <p class="card-text">User&hyphen;centric design for businesses looking to make a lasting impression&period;</p>
+                                <span class="btn web-des">Read More</span>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                <div class="col-md-6 col-lg-3 mb-4">
-                    <div class="card pt-4">
-                        <i class="fa-solid fa-shield-halved mx-auto"></i>
-                        <div class="card-body">
-                            <h5 class="card-title">Cyber Security</h5>
-                            <p class="card-text">Ensuring your online business stays secure 24&#47;7 365 days of the year&period;</p>
-                            <a href="#" class="btn btn-primary">Read More</a>
+                <div class="col-md-6 col-lg-3 mt-4">
+                    <a href="#">
+                        <div class="card card-services cyber pt-4">
+                            <i class="fa-solid fa-shield-halved icon-rounded cyb-sec fa-2x mx-auto"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Cyber Security</h5>
+                                <p class="card-text">Ensuring your online business stays secure 24&#47;7 365 days of the year&period;</p>
+                                <span class="btn cyb-sec">Read More</span>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
-                <div class="col-md-6 col-lg-3 mb-4">
-                    <div class="card pt-4">
-                        <i class="fa-solid fa-graduation-cap mx-auto"></i>
-                        <div class="card-body">
-                            <h5 class="card-title">Developer Training</h5>
-                            <p class="card-text">Have you considered a career in web development but you aren&apos;t sure where to start&quest;</p>
-                            <a href="#" class="btn btn-primary">Read More</a>
+                <div class="col-md-6 col-lg-3 mt-4">
+                    <a href="#">
+                        <div class="card card-services developer pt-4">
+                            <i class="fa-solid fa-graduation-cap  icon-rounded dev-train fa-2x mx-auto"></i>
+                            <div class="card-body">
+                                <h5 class="card-title">Developer Training</h5>
+                                <p class="card-text">Have you considered a career in web development but you aren&apos;t sure where to start&quest;</p>
+                                <span class="btn dev-train">Read More</span>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="welcome">
-            <div class="container py-4">
+        <div class="slider">
+            <img src="img/slider/future-50-bw.jpg" alt="">
+            <img src="img/slider/google-partner-bw.jpg" alt="">
+            <img src="img/slider/investing-in-future-growth-bw.jpg" alt="">
+            <img src="img/slider/norfolk-carbon-charter-bw.jpg" alt="">
+            <img src="img/slider/PPC_logo-bw.jpg" alt="">
+            <img src="img/slider/princess-royal-training-bw.jpg" alt="">
+            <img src="img/slider/qms-bw.jpg" alt="">
+            <img src="img/slider/skills-of-tomorrow-bw.jpg" alt="">
+        </div>
+        <div class="welcome py-4">
+            <div class="container">
                 <div class="mb-4">
                     <h2>Welcome To Netmatters</h2>
                     <p>Netmatters Ltd is a leading web design&comma; IT support and digital marketing agency based in the East of England with offices in Cambridge&comma; Wymondham and Great Yarmouth</p>
                     <p>We offer a wide range of digital services to businesses including software and website development&comma; IT Support&comma; telecoms services&comma; digital marketing services and cyber security&period;</p>
                     <p>Founded in 2008&comma; we partner with business from all industry sectors to help them gain new prospects&comma; nature existing leads and further grow their sales&period;</p>
-                    <a class="btn btn-primary" href="#">Read More &rarr;</a>
+                    <div>
+                        <a class="btn read-more" href="#">Read More &rarr;</a>
+                    </div>
                 </div>
                 <div>
                     <h2>What Our Clients Think</h2>
                     <p>Great service&period; Took the reigns and did all the leg work for us&period; Ensured we were happy with our website and made all changes necessary as and when asked to do so&period;</p>
-                    <span>Oliver King &hyphen; SEA Scaffolding</span>
-                    <a class="btn btn-primary" href="#">Google Reviews &rarr;</a>
-                    <a class="btn btn-primary" href="#">Trustpilot Reviews &rarr;</a>
+                    <span class="quote-author">Oliver King &hyphen; SEA Scaffolding</span>
+                    <div>
+                        <a class="btn google" href="#">Google Reviews &rarr;</a>
+                        <a class="btn trustpilot" href="#">Trustpilot Reviews &rarr;</a>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
-    <aside class="container">
+    <aside class="container py-4">
         <h2 class="text-center">Latest News</h2>
         <div class="row">
             <div class="col-sm-6 col-lg-4">
                 <article class="card">
-                    <div class="card-body">
+                    <img src="img/news/april-notables-2022-bRIE.jpg" alt="">
+                    <div class="card-body card-news-1">
                         <h5 class="card-title">A Revolutionised IT Infrastructure&colon; Case Study</h5>
                         <p class="card-text">Netmatters has been building a strong reputation across Norfolk and Cambridge as the leading full&hyphen;se&period;&period;&period;</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
+                        <span class="btn">Read More</span>
                     </div>
                 </article>
             </div>
             <div class="col-sm-6 col-lg-4">
                 <article class="card">
-                    <div class="card-body">
+                    <img src="img/news/scs-graduates-april-s2nt.jpg" alt="">
+                    <div class="card-body card-news-2">
                         <h5 class="card-title">Michael Grimshaw Achieves Long Service Award</h5>
                         <p class="card-text">The team at Netmatters are happy to congratulate Michael Grimshaw for achieving the Long Service Awa&period;&period;&period;</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
+                        <span class="btn">Read More</span>
                     </div>
                 </article>
             </div>
             <div class="col-sm-6 col-lg-4">
                 <article class="card">
-                    <div class="card-body">
+                    <img class src="img/news/senior-web-developer-8f6n.jpg" alt="">
+                    <div class="card-body card-news-3">
                         <h5 class="card-title">Where to Spend Your Marketing Budget in 2022</h5>
                         <p class="card-text">Marketing is an ever&hyphen;changing part of business&comma; and the consumer landscape has changed considerably&period;&period;&period;</p>
-                        <a href="#" class="btn btn-primary">Read More</a>
+                        <span class="btn">Read More</span>
                     </div>
                 </article>
             </div>
         </div>
     </aside>
-    <section>
+    <div class="container">
+        <img src="img/clients/home-T5gi.jpg" alt="">
+        <img src="img/clients/home-BsyK.jpg" alt="">
+        <img src="img/clients/home-RfLc.jpg" alt="">
+        <img src="img/clients/home-jHUl.jpg" alt="">
+    </div>
+    <section class="form py-4">
         <div class="container">
             <h2>Email Newsletter Sign&hyphen;Up</h2>
             <form>
-                <input class="mb-4" type="text">
-                <input class="mb-4" type="text"><br>
-                <input type="checkbox">
-                <span>Please tick this box if you wish to recieve marketing information from us&period; Please see our Privacy Policy for more information on how we use your data&period;</span><br>
-                <button type="button">Subscribe</button>
+                <label for="newsletter-name">Your Name <span>*</span></label>
+                <input class="form-control mb-4" id="newsletter-name" type="text">
+                <label for="newsletter-email">Your Email <span>*</span></label>
+                <input class="form-control mb-4" id="newsletter-email" type="text"><br>
+                <div class="form-check mb-4">
+                    <input class="form-check-input" id="form-checkbox" type="checkbox">
+                    <label class="form-check-label" for="form-checkbox">Please tick this box if you wish to recieve marketing information from us&period; Please see our Privacy Policy for more information on how we use your data&period;</label><br>
+                </div>
+                <button class="btn form-submit" type="button">Subscribe</button>
             </form>
         </div>
     </section>
     <footer>
-        <div class="container pt-4 mt-4">
+        <div class="container pt-4">
             <div class="row justify-content-between">
                 <div class="col-lg-6 row justify-content-center justify-content-sm-even">
                     <div class="services col-sm-6">
@@ -324,8 +408,19 @@
                     </div>
                 </div>
             </div>
-            <hr>
-            <span>&copy; Copyright Netmatters Ltd&period; 2022&period; All rights reserved &hyphen; <a href="#">Sitemap</a></span>
+            <div class="bottom row">
+                <hr>
+                <div class="license col-8">
+                    <span>&copy; Copyright Netmatters Ltd&period; 2022&period;<br class="visible-xs">All rights reserved <span>&hyphen;</span> <a href="#">Sitemap</a></span>
+                </div>
+                <div class="social-media col-4">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+
+                </div>
+            </div>
             
         </div>
     </footer>
