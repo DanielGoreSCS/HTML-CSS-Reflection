@@ -16,30 +16,56 @@
 <body>
     <header>
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg"> 
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <a class="navbar-brand" href="#"><img src="img/f-logo.png" alt="Netmatters logo"></a>
+                </div>
+                <div class="col-6 row">
+                    <div class="col-4">
+                        <a class="btn google" href="#">Support</a>
+                        <a class="btn google" href="#">Contact</a>
+                    </div>
+                    <div class="col-7">
+                        <div class="input-group mb-3">
+                            <input class="form-control" type="text"  placeholder="Search..." aria-label="Search..." aria-describedby="button-addon2">
+                            <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <button class="navbar-toggler navbar-dark bg-dark" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg py-lg-3"> 
             <div class="container">
-                <a class="navbar-brand" href="#">Netmatters</a>
-                <button class="navbar-toggler navbar-dark bg-dark" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav justify-content-center">
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
                         <li class="nav-item dropdown"> <!-- Bespoke Software -->
-                            <i class="fa-solid fa-grip mx-auto"></i>
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Bespoke Software</a>
+                            <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                                <span><i class="fa-solid fa-grip"></i></span>
+                                <small>Bespoke</small>
+                                Software
+                            </a>
                             <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Workflow</a></li>
-                            <li><a class="dropdown-item" href="#">Automation</a></li>
-                            <li><a class="dropdown-item" href="#">Intergration</a></li>
-                            <li><a class="dropdown-item" href="#">Database</a></li>
-                            <li><a class="dropdown-item" href="#">SharePoint</a></li>
-                            <li><a class="dropdown-item" href="#">Management</a></li>
-                            <li><a class="dropdown-item" href="#">Navision</a></li>
+                                <li><a class="dropdown-item" href="#">Workflow</a></li>
+                                <li><a class="dropdown-item" href="#">Automation</a></li>
+                                <li><a class="dropdown-item" href="#">Intergration</a></li>
+                                <li><a class="dropdown-item" href="#">Database</a></li>
+                                <li><a class="dropdown-item" href="#">SharePoint</a></li>
+                                <li><a class="dropdown-item" href="#">Management</a></li>
+                                <li><a class="dropdown-item" href="#">Navision</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown"> <!-- IT Support -->
-                            <i class="fa-solid fa-desktop mx-auto"></i>
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">IT Support</a>
+                            <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                                <i class="fa-solid fa-desktop"></i>
+                                <small>IT</small>
+                                Support
+                            </a>
                             <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Managed IT</a></li>
                             <li><a class="dropdown-item" href="#">Business IT</a></li>
@@ -50,8 +76,11 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown"> <!-- Digital Marketing -->
-                            <i class="fa-solid fa-signal mx-auto"></i>
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Digital Marketing</a>
+                            <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                                <i class="fa-solid fa-signal"></i>
+                                <small>Digital</small>
+                                Marketing
+                            </a>
                             <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Search &lpar;SEO&rpar;</a></li>
                             <li><a class="dropdown-item" href="#">Paid &lpar;PPC&rpar;</a></li>
@@ -62,8 +91,11 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown"> <!-- Telecoms Services -->
-                            <i class="fa-solid fa-phone mx-auto"></i>
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Telecoms Services</a>
+                            <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                                <i class="fa-solid fa-phone"></i>
+                                <small>Telecoms</small>
+                                Services
+                            </a>
                             <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Business Mobile</a></li>
                             <li><a class="dropdown-item" href="#">Hosted VoIP</a></li>
@@ -74,8 +106,11 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown"> <!-- Web Design -->
-                            <i class="fa-solid fa-code mx-auto"></i>
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Web Design</a>
+                            <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                                <i class="fa-solid fa-code"></i>
+                                <small>Web</small>
+                                Design
+                            </a>
                             <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Stylish Websites</a></li>
                             <li><a class="dropdown-item" href="#">eCommerce Stores</a></li>
@@ -86,8 +121,11 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown"> <!-- Cyber Security -->
-                            <i class="fa-solid fa-shield-halved mx-auto"></i>
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Cyber Security</a>
+                            <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                                <i class="fa-solid fa-shield-halved"></i>
+                                <small>Cyber</small>
+                                Security
+                            </a>
                             <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Assessment</a></li>
                             <li><a class="dropdown-item" href="#">Management</a></li>
@@ -98,8 +136,11 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown"> <!-- Developer Course -->
-                            <i class="fa-solid fa-graduation-cap mx-auto"></i>
-                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Developer Course</a>
+                            <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                                <small>Developer</small>
+                                Course
+                            </a>
                             <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Train For A Career In Tech</a></li>
                             <li><a class="dropdown-item" href="#">Scion Scheme Frequently Asked Questions</a></li>
@@ -208,6 +249,16 @@
                 </div>
             </div>
         </div>
+        <div class="slider">
+            <img src="img/slider/future-50-bw.jpg" alt="">
+            <img src="img/slider/google-partner-bw.jpg" alt="">
+            <img src="img/slider/investing-in-future-growth-bw.jpg" alt="">
+            <img src="img/slider/norfolk-carbon-charter-bw.jpg" alt="">
+            <img src="img/slider/PPC_logo-bw.jpg" alt="">
+            <img src="img/slider/princess-royal-training-bw.jpg" alt="">
+            <img src="img/slider/qms-bw.jpg" alt="">
+            <img src="img/slider/skills-of-tomorrow-bw.jpg" alt="">
+        </div>
         <div class="welcome py-4">
             <div class="container">
                 <div class="mb-4">
@@ -236,6 +287,7 @@
         <div class="row">
             <div class="col-sm-6 col-lg-4">
                 <article class="card">
+                    <img src="img/news/april-notables-2022-bRIE.jpg" alt="">
                     <div class="card-body card-news-1">
                         <h5 class="card-title">A Revolutionised IT Infrastructure&colon; Case Study</h5>
                         <p class="card-text">Netmatters has been building a strong reputation across Norfolk and Cambridge as the leading full&hyphen;se&period;&period;&period;</p>
@@ -245,6 +297,7 @@
             </div>
             <div class="col-sm-6 col-lg-4">
                 <article class="card">
+                    <img src="img/news/scs-graduates-april-s2nt.jpg" alt="">
                     <div class="card-body card-news-2">
                         <h5 class="card-title">Michael Grimshaw Achieves Long Service Award</h5>
                         <p class="card-text">The team at Netmatters are happy to congratulate Michael Grimshaw for achieving the Long Service Awa&period;&period;&period;</p>
@@ -254,6 +307,7 @@
             </div>
             <div class="col-sm-6 col-lg-4">
                 <article class="card">
+                    <img class src="img/news/senior-web-developer-8f6n.jpg" alt="">
                     <div class="card-body card-news-3">
                         <h5 class="card-title">Where to Spend Your Marketing Budget in 2022</h5>
                         <p class="card-text">Marketing is an ever&hyphen;changing part of business&comma; and the consumer landscape has changed considerably&period;&period;&period;</p>
@@ -263,6 +317,12 @@
             </div>
         </div>
     </aside>
+    <div class="container">
+        <img src="img/clients/home-T5gi.jpg" alt="">
+        <img src="img/clients/home-BsyK.jpg" alt="">
+        <img src="img/clients/home-RfLc.jpg" alt="">
+        <img src="img/clients/home-jHUl.jpg" alt="">
+    </div>
     <section class="form py-4">
         <div class="container">
             <h2>Email Newsletter Sign&hyphen;Up</h2>
@@ -348,8 +408,19 @@
                     </div>
                 </div>
             </div>
-            <hr>
-            <span>&copy; Copyright Netmatters Ltd&period; 2022&period; All rights reserved &hyphen; <a href="#">Sitemap</a></span>
+            <div class="bottom row">
+                <hr>
+                <div class="license col-8">
+                    <span>&copy; Copyright Netmatters Ltd&period; 2022&period;<br class="visible-xs">All rights reserved <span>&hyphen;</span> <a href="#">Sitemap</a></span>
+                </div>
+                <div class="social-media col-4">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin-in"></i>
+
+                </div>
+            </div>
             
         </div>
     </footer>

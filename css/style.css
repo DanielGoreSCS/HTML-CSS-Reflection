@@ -34,8 +34,14 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .hero-img {
-  background: url("../img/home-oaVs.webp") no-repeat top center;
+  background: url("../img/home-oaVs.jpg") no-repeat top center;
   background-color: #ccc;
   background-size: cover;
   height: 550px;
@@ -67,6 +73,10 @@ footer {
   color: #fff;
 }
 
+.slider {
+  display: inline-flex;
+}
+
 .welcome {
   background-color: #333645;
   color: #fff;
@@ -91,10 +101,16 @@ footer a:hover {
 
 .navbar {
   background-color: #333645;
+  padding: 0;
 }
 
 .nav-link {
   color: #fff;
+  text-align: center;
+}
+
+.fa-solid {
+  width: 100%;
 }
 
 .fa-grip {
@@ -147,7 +163,7 @@ footer a:hover {
   transition: 0.5s ease;
 }
 .card-services {
-  height: 300px;
+  height: 100%;
 }
 .card-news-1 *.card-title {
   color: #926fb1;

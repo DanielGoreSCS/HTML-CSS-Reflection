@@ -4,8 +4,14 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 .hero-img {
-    background: url('../img/home-oaVs.webp') no-repeat top center;
+    background: url('../img/home-oaVs.jpg') no-repeat top center;
     background-color: #ccc;
     background-size: cover;
     height: 550px;
@@ -35,7 +41,9 @@ footer {
     background-color: $primary;
     color: $white;
 }
-
+.slider {
+    display: inline-flex;
+}
 .welcome {
     background-color: $primary;
     color: $white;
