@@ -34,6 +34,16 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+@media (min-width: 768px) {
+  .text-xs-center {
+    text-align: center;
+  }
+}
+@media (min-width: 992px) {
+  .text-md-left {
+    text-align: left;
+  }
+}
 a {
   text-decoration: none;
 }
@@ -66,7 +76,6 @@ ul {
 }
 .hero-text {
   z-index: 1;
-  text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -106,6 +115,16 @@ header {
   background-color: #fff;
 }
 
+.inner {
+  margin: 20px 0;
+}
+.inner-width {
+  width: 63px;
+}
+.inner-height {
+  height: 56px !important;
+}
+
 footer a {
   text-decoration: none;
   color: #fff;
@@ -135,35 +154,27 @@ footer a:hover {
 .fa-solid {
   width: 100%;
 }
-
 .fa-phone-volume {
   color: #333645;
 }
-
 .fa-grip {
   color: #67809F;
 }
-
 .fa-desktop {
   color: #4183D7;
 }
-
 .fa-signal {
   color: #2ECC71;
 }
-
 .fa-phone {
   color: #D64541;
 }
-
 .fa-code {
   color: #926FB1;
 }
-
 .fa-shield-halved {
   color: #F62459;
 }
-
 .fa-graduation-cap {
   color: #CE4125;
 }
@@ -296,7 +307,7 @@ footer a:hover {
 .btn-support {
   background-color: #4183D7;
 }
-.btn-search {
+.btn-contact {
   background-color: #999AA2;
 }
 
@@ -305,7 +316,6 @@ footer a:hover {
   padding: 5px 15px;
   border-color: #ccc;
 }
-
 .form-check-input:active {
   background-color: #333645;
 }

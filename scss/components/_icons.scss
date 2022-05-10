@@ -1,41 +1,42 @@
 @use '../abstracts/colors' as c;
 
-.fa-solid {
-    width: 100%;
-}
+.fa {
+    &-solid {
+        width: 100%;
+    }
 
-.fa-phone-volume {
-    color: c.$primary;
-}
+    &-phone-volume {
+        color: c.$primary;
+    }
 
-.fa-grip {
-    color: c.$bespoke--software;
-}
+    &-grip {
+        color: c.$bespoke--software;
+    }
 
-.fa-desktop {
-    color: c.$it--support;
-}
+    &-desktop {
+        color: c.$it--support;
+    }
 
-.fa-signal {
-    color: c.$digital-marketing;
-}
+    &-signal {
+        color: c.$digital-marketing;
+    }
 
-.fa-phone {
-    color: c.$telecoms-services;
-}
+    &-phone {
+        color: c.$telecoms-services;
+    }
 
-.fa-code {
-    color: c.$web--design;
-}
+    &-code {
+        color: c.$web--design;
+    }
 
-.fa-shield-halved {
-    color: c.$cyber--security;
-}
+    &-shield-halved {
+        color: c.$cyber--security;
+    }
 
-.fa-graduation-cap {
-    color: c.$developer--training;
+    &-graduation-cap {
+        color: c.$developer--training;
+    }
 }
-
 .icon-rounded {
     width: 65px;
     height: 65px;
