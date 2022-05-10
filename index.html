@@ -17,34 +17,38 @@
 <body>
     <header>
         <!-- Navigation -->
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-6 col-md-5 col-lg-4">
-                    <a class="navbar-brand" href="#"><img src="img/f-logo.png" alt="Netmatters logo"></a>
-                </div>
-                <div class="col-xs-3 d-sm-none">
-                    <i class="fa-solid fa-phone-volume"></i>
-                </div>
-                <div class="col-xs-3 col-sm-6 col-md-7 col-lg-8 row">
-                    <div class="col-4 d-none d-lg-block">
-                        <a class="btn btn-support" href="#">Support</a>
-                        <a class="btn btn-search" href="#">Contact</a>
+        <div class="inner">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-xs-6 col-md-5 col-lg-4">
+                        <a class="navbar-brand" href="#"><img src="img/f-logo.png" alt="Netmatters logo"></a>
                     </div>
-                    <div class="col-7">
-                        <div class="input-group mb-3">
-                            <input class="form-control d-md-none d-lg-block" type="text"  placeholder="Search..." aria-label="Search..." aria-describedby="button-addon2">
-                            <button class="btn btn-search" type="button" id="button-addon2"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <div class="col-xs-3 d-sm-none">
+                        <span>
+                            <i class="fa-solid fa-phone-volume"></i>
+                        </span>
+                    </div>
+                    <div class="col-xs-3 col-sm-6 col-md-7 col-lg-8 row align-items-center">
+                        <div class="col-4 d-none d-lg-block text-center">
+                            <a class="btn btn-support inner-height" href="#"><i class="fa-solid fa-computer-mouse d-inline"></i> Support</a>
+                            <a class="btn btn-contact inner-height" href="#"><i class="fa-solid fa-paper-plane d-inline"></i> Contact</a>
                         </div>
-                    </div>
-                    <div class="col-1">
-                        <button class="navbar-toggler navbar-dark bg-dark" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
+                        <div class="d-none d-md-block col-md-7">
+                            <div class="input-group">
+                                <input class="form-control d-md-none d-lg-block inner-height" type="text"  placeholder="Search..." aria-label="Search..." aria-describedby="button-addon2">
+                                <button class="btn btn-contact inner-width inner-height" type="button" id="button-addon2"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </div>
+                        </div>
+                        <div class="col-1">
+                            <button class="navbar-toggler navbar-dark bg-dark inner-width inner-height" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <nav class="navbar navbar-expand-lg py-lg-3"> 
+        <nav class="navbar navbar-expand-lg"> 
             <div class="container">
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
                     <ul class="navbar-nav">
@@ -158,8 +162,8 @@
         </nav>
     </header>
     <main>
-        <div class="hero-img">
-            <div class="container hero-text text-center py-4">
+        <div class="hero-img hero-gradient">
+            <div class="container hero-text text-xs-center text-md-left py-4">
                 <h1>The East Of England&apos;s Leading Technology Company</h1>
                 <p>With offices in Cambridge&comma; Wymondham & Great Yarmouth</p>
             </div>
@@ -167,7 +171,7 @@
         <div class="container py-4">
             <h2>Our Services</h2>
             <div class="row">
-                <div class="col-md-4 mt-4">
+                <div class="col-lg-4 mt-4">
                     <a href="#">
                         <div class="card card-services software pt-4">
                             <i class="fa-solid fa-grip icon-rounded besp-soft fa-2x mx-auto"></i>
@@ -179,7 +183,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-4 mt-4">
+                <div class="col-lg-4 mt-4">
                     <a href="#">
                         <div class="card card-services it pt-4">
                             <i class="fa-solid fa-desktop icon-rounded it-sup fa-2x mx-auto"></i>
@@ -191,7 +195,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-4 mt-4">
+                <div class="col-lg-4 mt-4">
                     <a href="#">
                         <div class="card card-services digital pt-4">
                             <i class="fa-solid fa-signal icon-rounded dig-mark fa-2x mx-auto"></i>
@@ -422,7 +426,6 @@
                     <i class="fa-brands fa-twitter"></i>
                     <i class="fa-brands fa-instagram"></i>
                     <i class="fa-brands fa-linkedin-in"></i>
-
                 </div>
             </div>
             
