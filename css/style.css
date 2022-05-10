@@ -178,6 +178,10 @@ footer a:hover {
 .fa-graduation-cap {
   color: #CE4125;
 }
+.fa-star {
+  color: orange;
+  font-size: 50px;
+}
 
 .icon-rounded {
   width: 65px;
@@ -318,6 +322,10 @@ footer a:hover {
 }
 .form-check-input:active {
   background-color: #333645;
+}
+
+.required {
+  color: #D24D57;
 }
 
 /*# sourceMappingURL=style.css.map */
