@@ -30,6 +30,10 @@
   color: #A3A8AC;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 a {
   text-decoration: none;
 }
@@ -103,10 +107,16 @@ footer a:hover {
   background-color: #333645;
   padding: 0;
 }
+.navbar-nav {
+  flex-grow: 1;
+}
 
 .nav-link {
   color: #fff;
   text-align: center;
+}
+.nav-item {
+  flex-grow: 1;
 }
 
 .fa-solid {

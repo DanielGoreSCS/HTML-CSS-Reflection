@@ -3,8 +3,16 @@
 .navbar {
     background-color: $primary;
     padding: 0;
+    &-nav {
+        flex-grow: 1;
+    }
 }
-.nav-link {
-    color: $white;
-    text-align: center;
+.nav {
+    &-link {
+        color: $white;
+        text-align: center;
+    }
+    &-item {
+        flex-grow: 1;
+    }
 }
