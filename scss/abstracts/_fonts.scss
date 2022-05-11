@@ -1,16 +1,1 @@
 $fonts: 'Poppins', sans-serif;
-
-body {
-    font-family: $fonts;
-}
-
-@media (min-width: 768px){
-    .text-xs-center {
-        text-align: center;
-    }
-}
-@media (min-width: 992px) {
-    .text-md-left {
-        text-align: left;
-    }
-}
