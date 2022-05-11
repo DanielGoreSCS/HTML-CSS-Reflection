@@ -1,10 +1,6 @@
 @use '../abstracts/colors' as c;
 
 .fa {
-    &-solid {
-        width: 100%;
-    }
-
     &-phone-volume {
         color: c.$primary;
     }

@@ -194,6 +194,11 @@ li {
   font-size: 1.125rem;
   line-height: 1;
 }
+.nav-link i {
+  font-size: 1.438rem;
+  display: block;
+  padding-bottom: 10px;
+}
 .nav-link small {
   font-size: 0.625rem;
   padding-bottom: 1px;
@@ -240,14 +245,9 @@ label {
   margin-bottom: 0.375rem;
 }
 
-@media (min-width: 768px) {
-  .text-xs-center {
-    text-align: center;
-  }
-}
-@media (min-width: 992px) {
+@media (max-width: 991px) {
   .text-md-left {
-    text-align: left;
+    text-align: center !important;
   }
 }
 .navbar {
@@ -267,9 +267,6 @@ label {
   flex-grow: 1;
 }
 
-.fa-solid {
-  width: 100%;
-}
 .fa-phone-volume {
   color: #333645;
 }

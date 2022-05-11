@@ -66,6 +66,11 @@ li {
 .nav-link {
     font-size: 1.125rem;
     line-height: 1;
+    i {
+        font-size: 1.438rem;
+        display: block;
+        padding-bottom: 10px;
+    }
     small {
         font-size: .625rem;
         padding-bottom: 1px;
@@ -110,13 +115,9 @@ label {
         margin-bottom: .375rem;
     }
 }
-@media (min-width: 768px){
-    .text-xs-center {
-        text-align: center;
-    }
-}
-@media (min-width: 992px) {
+
+@media (max-width: 991px) {
     .text-md-left {
-        text-align: left;
+        text-align: center !important;
     }
 }
