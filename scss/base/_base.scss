@@ -67,6 +67,10 @@ footer {
 }
 header {
     background-color: $white;
+    img {
+        max-width: 100%;
+        display: block;
+    }
 }
 .inner {
     margin: 20px 0;

@@ -10,7 +10,22 @@
         background-color: c.$primary;
     }
 }
-
+.search {
+    &-form {
+        background-color: rgba(0,0,0,.1);
+        outline: 1px solid hsla(0,0%,100%,.2);
+        border: 2px solid rgba(0,0,0,.1);
+        transition: none;
+        width: 100%;
+    }
+    &-bar {
+        background-color: transparent;
+        border: none;
+    }
+    &-btn {
+        color: c.$primary;
+    }
+}
 .required {
     color: c.$required;
 }

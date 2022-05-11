@@ -100,6 +100,10 @@ footer {
 header {
   background-color: #fff;
 }
+header img {
+  max-width: 100%;
+  display: block;
+}
 
 .inner {
   margin: 20px 0;
@@ -436,6 +440,21 @@ label {
 }
 .form-check-input:active {
   background-color: #333645;
+}
+
+.search-form {
+  background-color: rgba(0, 0, 0, 0.1);
+  outline: 1px solid hsla(0deg, 0%, 100%, 0.2);
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  transition: none;
+  width: 100%;
+}
+.search-bar {
+  background-color: transparent;
+  border: none;
+}
+.search-btn {
+  color: #333645;
 }
 
 .required {
