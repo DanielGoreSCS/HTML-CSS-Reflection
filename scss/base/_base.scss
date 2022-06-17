@@ -1,4 +1,5 @@
 @use '../abstracts' as *;
+@use '../utilities/mixins' as *;
 
 a {
     text-decoration: none;
@@ -8,6 +9,11 @@ ul {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.section {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .hero {
@@ -41,21 +47,90 @@ ul {
     }
 }
 
-.services {
-    width: 225px;
-    margin-bottom: 30px;
+.service-list {
+    color: $primary;
 }
+
+.services,
 .offices {
     width: 225px;
     margin-bottom: 30px;
 }
 
 footer {
+    padding: 47px 0 43px;
     background-color: $primary;
     color: $white;
 }
 .slider {
-    display: inline-flex;
+    height: 170px;
+    & ul {
+        width: 100%;
+        display: inline-flex;
+        overflow: hidden;
+        align-items: center;
+        justify-content: space-evenly;
+        & li {
+            @include coloured-hover;
+        }
+    }
+}
+.clients {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    & .list {
+        width: 100%;
+        display: flex;
+        & .item {
+            flex-grow: 1;
+            padding: 0 20px;
+            position: relative;
+            text-align: center;
+            font-size: .875rem;
+            & img {
+                max-width: 100%;
+                height: auto;
+            }
+            & .coloured {
+                display: none;
+            }
+            & .tooltips {
+                @include tooltip-box;
+            }
+            &:hover {
+                & .description {
+                    display: block;
+                }
+                & .greyscale {
+                    display: none;
+                }
+                & .coloured {
+                    display: inline;
+                }
+            }
+        }
+    }
+}
+.description {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: -200px;
+    right: -200px;
+}
+.arrow {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -36px;
+    &::after {
+        content: "";
+        margin: auto;
+        display: inline-block;
+        border-color: $primary transparent transparent;
+        border-style: solid;
+        border-width: 35px 36px 0;
+    }
 }
 .welcome {
     background-color: $primary;
@@ -67,6 +142,7 @@ footer {
 }
 header {
     background-color: $white;
+    
     img {
         max-width: 100%;
         display: block;
@@ -87,5 +163,40 @@ footer a {
     &:hover {
         text-decoration: underline $white;
         color: $white;
+    }
+}
+
+.social-media {
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+    & a {
+        padding: 7px 10px 10px;
+        border-radius: 50%;
+        max-height: 38px;
+        &.facebook:hover {
+            background-color: map-get($social-media, "facebook");
+        }
+        &.twitter:hover {
+            background-color: map-get($social-media, "twitter");
+        }
+        &.instagram:hover {
+            background-color: map-get($social-media, "instagram");
+        }
+        &.linkedin:hover {
+            background-color: map-get($social-media, "linkedin");
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .clients {
+        & .list {
+            & .item {
+                & img {
+                    width: 100%;
+                }
+            }
+        }
     }
 }

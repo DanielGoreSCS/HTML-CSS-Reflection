@@ -116,8 +116,26 @@ label {
     }
 }
 
+.d-inline-flex {
+    align-items: center;
+    justify-content: center;
+}
+
 @media (max-width: 991px) {
     .text-md-left {
         text-align: center !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .hero-text {
+        h1 {
+            font-size: 4rem;
+            line-height: 5rem;
+        }
+        p {
+            font-size: 1.625rem;
+            line-height: 2.5rem;
+        }
     }
 }

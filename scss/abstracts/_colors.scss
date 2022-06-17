@@ -7,19 +7,19 @@ $support: #4183D7;
 
 $search: #999AA2;
 
-$bespoke--software: #67809F;
+$bespoke-software: #67809F;
 
-$it--support: #4183D7;
+$it-support: #4183D7;
 
 $digital-marketing: #2ECC71;
 
 $telecoms-services: #D64541;
 
-$web--design: #926FB1;
+$web-design: #926FB1;
 
-$cyber--security: #F62459;
+$cyber-security: #F62459;
 
-$developer--training: #CE4125;
+$developer-training: #CE4125;
 
 $google: #4387F6;
 
@@ -33,13 +33,19 @@ $articles:  (
     "3": #67809f
     
 );
+$social-media: (
+    "facebook": #3b5998,
+    "twitter": #00aced,
+    "instagram": #d93175,
+    "linkedin": #0077b5
+);
 $form: #DDD;
 .besp-soft {
-    background-color: $bespoke--software;
+    background-color: $bespoke-software;
 }
 
 .it-sup {
-    background-color: $it--support;
+    background-color: $it-support;
 }
 
 .dig-mark {
@@ -51,15 +57,15 @@ $form: #DDD;
 }
 
 .web-des {
-    background-color: $web--design;
+    background-color: $web-design;
 }
 
 .cyb-sec {
-    background-color: $cyber--security;
+    background-color: $cyber-security;
 }
 
 .dev-train {
-    background-color: $developer--training;
+    background-color: $developer-training;
 }
 
 .client-quote-author {

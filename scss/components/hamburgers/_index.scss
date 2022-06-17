@@ -1,0 +1,8 @@
+// Base Hamburger (We need this)
+// ==================================================
+@forward '../hamburgers/base';
+
+// Hamburger types
+// ==================================================
+@forward "../hamburgers/types/spin";
+@forward "../hamburgers/types/spin-r";

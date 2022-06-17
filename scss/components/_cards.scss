@@ -40,18 +40,18 @@
     &:hover {
         transform: translateY(-1rem);
         &.software {
-            background-color: c.$bespoke--software;
+            background-color: c.$bespoke-software;
         }
         & .besp-soft {
             background-color: c.$white;
-            color: c.$bespoke--software;
+            color: c.$bespoke-software;
         }
         &.it {
-            background-color: c.$it--support;
+            background-color: c.$it-support;
         }
         & .it-sup {
             background-color: c.$white;
-            color: c.$it--support;
+            color: c.$it-support;
         }
         &.digital {
             background-color: c.$digital-marketing;
@@ -68,25 +68,25 @@
             color: c.$telecoms-services;
         }
         &.web {
-            background-color: c.$web--design;
+            background-color: c.$web-design;
         }
         & .web-des {
             background-color: c.$white;
-            color: c.$web--design;
+            color: c.$web-design;
         }
         &.cyber {
-            background-color: c.$cyber--security;
+            background-color: c.$cyber-security;
         }
         & .cyb-sec {
             background-color: c.$white;
-            color: c.$cyber--security;
+            color: c.$cyber-security;
         }
         &.developer {
-            background-color: c.$developer--training;
+            background-color: c.$developer-training;
         }
         & .dev-train {
             background-color: c.$white;
-            color: c.$developer--training;
+            color: c.$developer-training;
         }
     }
 }

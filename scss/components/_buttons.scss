@@ -1,38 +1,53 @@
-@use '../abstracts/colors' as c;
+@use '../abstracts/colors' as *;
+@use '../utilities/mixins' as *;
 
 .btn {
-    color: c.$white;
+    color: $white;
     text-transform: uppercase;
     &:hover {
-        color: c.$white;
+        color: $white;
     }
     &.google {
-        background-color: c.$google;
+        background-color: $google;
         &:hover {
-            background-color: darken(c.$google, 10%);
+            @include hover--darken($google);
         }
     }
 
     &.trustpilot {
-        background-color: c.$trustpilot;
+        background-color: $trustpilot;
         &:hover {
-            background-color: darken(c.$trustpilot, 10%);
+            @include hover--darken($trustpilot);
         }
     }
 
     &.read-more {
-        background-color: c.$primary-dark;
+        background-color: $primary-dark;
         &:hover {
-            background-color: darken(c.$primary-dark, 10%);
+            @include hover--darken($primary-dark);
         }
     }
     &.form-submit {
-        background-color: c.$primary;
+        background-color: $primary;
+        &:hover {
+            @include hover--darken($primary);
+        }
     }
     &-support {
-        background-color: c.$support;
+        background-color: $support;
+        &:hover {
+            @include hover--darken($support);
+        }
     }
     &-contact {
-        background-color: c.$search;
+        background-color: $search;
+        &:hover {
+            @include hover--darken($search);
+        }
+    }
+}
+.hamburger {
+    &:hover {
+        @include hover--darken($primary);
     }
 }

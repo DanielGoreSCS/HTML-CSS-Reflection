@@ -1,4 +1,5 @@
 @use '../abstracts' as *;
+@use '../utilities/mixins' as *;
 
 .navbar {
     background-color: $primary;
@@ -6,14 +7,114 @@
     &-nav {
         flex-grow: 1;
     }
+    &-brand {
+        display: block;
+    }
 }
 .nav {
     &-link {
+        transition: 0s;
         color: $white;
         text-align: center;
         padding: 19px 0 18px !important;
+        &:focus,
+        &:hover {
+            color: $white;
+        }
+        &.show {
+            color: $white;
+            &.bespoke-software {
+                background-color: $bespoke-software;
+            }
+            &.it-support {
+                background-color: $it-support;
+            }
+            &.digital-marketing {
+                background-color: $digital-marketing;
+            }
+            &.telecoms-services {
+                background-color: $telecoms-services;
+            }
+            &.web-design {
+                background-color: $web-design;
+            }
+            &.cyber-security {
+                background-color: $cyber-security;
+            }
+            &.developer-training {
+                background-color: $developer-training;
+            }
+            & i {
+                color: $white;
+            }
+        }
     }
     &-item {
         flex-grow: 1;
+    }
+    &-gap {
+        gap: 10px;
+    }
+    &-input-width {
+        max-width: 240px;
+    }
+}
+.dropdown {
+    &-menu {
+        &.bespoke-software {
+            @include nav-dropdown($bespoke-software);
+        }
+        &.it-support {
+            @include nav-dropdown($it-support);
+        }
+        &.digital-marketing {
+            @include nav-dropdown($digital-marketing);
+        }
+        &.telecoms-services {
+            @include nav-dropdown($telecoms-services);
+        }
+        &.web-design {
+            @include nav-dropdown($web-design);
+        }
+        &.cyber-security {
+            @include nav-dropdown($cyber-security);
+        }
+        &.developer-training {
+            @include nav-dropdown($developer-training);
+        }
+    }
+    &-item {
+        white-space: pre-line;
+        &:focus,
+        &:hover {
+            background-color: initial;
+            text-decoration: underline;
+        }
+    }
+}
+.fa-phone-volume {
+    font-size: 32px;
+}
+.nav-search {
+    margin-top: 10px;
+}
+
+.mr-5 {
+    margin-right: 5px;
+}
+
+.inner div .row {
+    --bs-gutter-x: 0;
+}
+
+@media (min-width: 455px) {
+    .inner div .row {
+        --bs-gutter-x: 10px;
+    }
+}
+
+@media (min-width: 775px) {
+    .inner div .row {
+        --bs-gutter-x: 1.5rem;
     }
 }
