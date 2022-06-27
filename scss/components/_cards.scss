@@ -1,92 +1,125 @@
-@use '../abstracts/colors' as c;
+@use '../abstracts/colors' as *;
 .card {
     text-decoration: none;
-    color: c.$primary;
+    color: $primary;
     text-align: center;
     padding: 30px;
     box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     transition: .5s ease;
+    &.card-latest-news {
+        border-radius: 0;
+        padding: 0;
+        border: none;
+    }
     &-services {
         height: 100%;
     }
-    &-news-1 * {
-        &.card-title {
-            color: map-get($map: c.$articles, $key: "1");
+    &-footer {
+        background-color: $white;
+        text-align: left;
+        padding: 0;
+        margin-top: 30px;
+        padding-top: 30px;
+        border-top: 1px solid $grey;
+        & img {
+            margin-right: 16px;
         }
-        &.btn {
-            background-color: map-get($map: c.$articles, $key: "1");
+        &-text {
+            font-size: 0.875rem;
+            
         }
     }
-    &-news-2 * {
-        &.card-title {
-            color: map-get($map: c.$articles, $key: "2");
+    &-news {
+        text-align: left;
+        padding: 30px;
+        border: 1px solid $grey;
+        border-top: 0;
+        border-radius: 0 0 3px 3px;
+        & .btn {
+            margin-top: 13px;
         }
-        &.btn {
-            background-color: map-get($map: c.$articles, $key: "2");
+        & .card-title {
+            font-size: 1rem;
         }
-    }
-    &-news-3 * {
-        &.card-title {
-            color: map-get($map: c.$articles, $key: "3");
+        &-1 * {
+            &.card-title {
+                color: map-get($map: $articles, $key: "1");
+            }
+            &.btn {
+                background-color: map-get($map: $articles, $key: "1");
+            }
         }
-        &.btn {
-            background-color: map-get($map: c.$articles, $key: "3");
+        &-2 * {
+            &.card-title {
+                color: map-get($map: $articles, $key: "2");
+            }
+            &.btn {
+                background-color: map-get($map: $articles, $key: "2");
+            }
+        }
+        &-3 * {
+            &.card-title {
+                color: map-get($map: $articles, $key: "3");
+            }
+            &.btn {
+                background-color: map-get($map: $articles, $key: "3");
+            }
         }
     }
     &-services:hover {
-        color: c.$white;
+        color: $white;
     }
     &:hover {
         transform: translateY(-1rem);
         &.software {
-            background-color: c.$bespoke-software;
+            background-color: $bespoke-software;
         }
         & .besp-soft {
-            background-color: c.$white;
-            color: c.$bespoke-software;
+            background-color: $white;
+            color: $bespoke-software;
         }
         &.it {
-            background-color: c.$it-support;
+            background-color: $it-support;
         }
         & .it-sup {
-            background-color: c.$white;
-            color: c.$it-support;
+            background-color: $white;
+            color: $it-support;
         }
         &.digital {
-            background-color: c.$digital-marketing;
+            background-color: $digital-marketing;
         }
         & .dig-mark {
-            background-color: c.$white;
-            color: c.$digital-marketing;
+            background-color: $white;
+            color: $digital-marketing;
         }
         &.telecoms {
-            background-color: c.$telecoms-services;
+            background-color: $telecoms-services;
         }
         & .tel-serv {
-            background-color: c.$white;
-            color: c.$telecoms-services;
+            background-color: $white;
+            color: $telecoms-services;
         }
         &.web {
-            background-color: c.$web-design;
+            background-color: $web-design;
         }
         & .web-des {
-            background-color: c.$white;
-            color: c.$web-design;
+            background-color: $white;
+            color: $web-design;
         }
         &.cyber {
-            background-color: c.$cyber-security;
+            background-color: $cyber-security;
         }
         & .cyb-sec {
-            background-color: c.$white;
-            color: c.$cyber-security;
+            background-color: $white;
+            color: $cyber-security;
         }
         &.developer {
-            background-color: c.$developer-training;
+            background-color: $developer-training;
         }
         & .dev-train {
-            background-color: c.$white;
-            color: c.$developer-training;
+            background-color: $white;
+            color: $developer-training;
         }
     }
 }

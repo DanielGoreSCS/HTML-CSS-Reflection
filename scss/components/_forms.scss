@@ -1,13 +1,39 @@
-@use '../abstracts/colors' as c;
+@use '../abstracts/colors' as *;
 
 .form {
     &-control {
         height: 47px;
         padding: 5px 15px;
-        border-color: #ccc;
+        border-color: $grey;
     }
-    &-check-input:active {
-        background-color: c.$primary;
+    &-check {
+        & *:hover {
+            cursor: pointer;
+        }
+        &-input {
+            height: 32px;
+            width: 32px;
+            border: 3px solid $primary;
+            border-radius: 3px;
+            margin-right: 20px;
+            &:checked {
+                background-color: $primary;
+            }
+            &:focus,
+            &:hover {
+                border-color: $primary;
+                box-shadow: none;
+            }
+        }
+        &-label {
+            & a {
+                color: $primary;
+                text-decoration: underline;
+                &:hover {
+                    color: darken($primary, 15%);
+                }
+            }
+        }
     }
 }
 .search {
@@ -23,9 +49,9 @@
         border: none;
     }
     &-btn {
-        color: c.$primary;
+        color: $primary;
     }
 }
 .required {
-    color: c.$required;
+    color: $required;
 }
