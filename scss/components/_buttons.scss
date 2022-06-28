@@ -9,6 +9,10 @@
     }
     &.google {
         background-color: $google;
+        padding: 10px 30px;
+        font-size: 20px;
+        margin-top: 20px;
+        margin-right: 10px;
         &:hover {
             @include hover--darken($google);
         }
@@ -16,6 +20,9 @@
 
     &.trustpilot {
         background-color: $trustpilot;
+        padding: 10px 30px;
+        font-size: 20px;
+        margin-top: 20px;
         &:hover {
             @include hover--darken($trustpilot);
         }
@@ -23,6 +30,9 @@
 
     &.read-more {
         background-color: $primary-dark;
+        padding: 10px 30px;
+        font-size: 20px;
+        margin-bottom: 50px;
         &:hover {
             @include hover--darken($primary-dark);
         }

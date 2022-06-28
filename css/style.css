@@ -68,6 +68,10 @@
     display: none !important;
   }
 
+  .col-lg-12.col-xl-5 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
   .col-xl-8 {
     flex: 0 0 auto;
     width: 58.33333333%;
@@ -90,6 +94,10 @@
     display: block !important;
   }
 
+  .col-lg-12.col-xl-5 {
+    flex: 0 0 auto;
+    width: 41.66666667%;
+  }
   .col-xl-8 {
     flex: 0 0 auto;
     width: 66.66666667%;
@@ -561,6 +569,11 @@ label {
   text-align: center;
   line-height: 1.313rem;
 }
+@media (max-width: 1259px) {
+  .dropdown-menu.bespoke-software li a {
+    font-size: 0.8125rem;
+  }
+}
 .dropdown-menu.it-support {
   border: 0;
 }
@@ -578,6 +591,11 @@ label {
   font-size: 1rem;
   text-align: center;
   line-height: 1.313rem;
+}
+@media (max-width: 1259px) {
+  .dropdown-menu.it-support li a {
+    font-size: 0.8125rem;
+  }
 }
 .dropdown-menu.digital-marketing {
   border: 0;
@@ -597,6 +615,11 @@ label {
   text-align: center;
   line-height: 1.313rem;
 }
+@media (max-width: 1259px) {
+  .dropdown-menu.digital-marketing li a {
+    font-size: 0.8125rem;
+  }
+}
 .dropdown-menu.telecoms-services {
   border: 0;
 }
@@ -614,6 +637,11 @@ label {
   font-size: 1rem;
   text-align: center;
   line-height: 1.313rem;
+}
+@media (max-width: 1259px) {
+  .dropdown-menu.telecoms-services li a {
+    font-size: 0.8125rem;
+  }
 }
 .dropdown-menu.web-design {
   border: 0;
@@ -633,6 +661,11 @@ label {
   text-align: center;
   line-height: 1.313rem;
 }
+@media (max-width: 1259px) {
+  .dropdown-menu.web-design li a {
+    font-size: 0.8125rem;
+  }
+}
 .dropdown-menu.cyber-security {
   border: 0;
 }
@@ -651,6 +684,11 @@ label {
   text-align: center;
   line-height: 1.313rem;
 }
+@media (max-width: 1259px) {
+  .dropdown-menu.cyber-security li a {
+    font-size: 0.8125rem;
+  }
+}
 .dropdown-menu.developer-training {
   border: 0;
 }
@@ -668,6 +706,11 @@ label {
   font-size: 1rem;
   text-align: center;
   line-height: 1.313rem;
+}
+@media (max-width: 1259px) {
+  .dropdown-menu.developer-training li a {
+    font-size: 0.8125rem;
+  }
 }
 .dropdown-item {
   white-space: pre-line;
@@ -871,18 +914,28 @@ label {
 }
 .btn.google {
   background-color: #4387F6;
+  padding: 10px 30px;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-right: 10px;
 }
 .btn.google:hover {
   background-color: #1268f4;
 }
 .btn.trustpilot {
   background-color: #00B67B;
+  padding: 10px 30px;
+  font-size: 20px;
+  margin-top: 20px;
 }
 .btn.trustpilot:hover {
   background-color: #008359;
 }
 .btn.read-more {
   background-color: #282b36;
+  padding: 10px 30px;
+  font-size: 20px;
+  margin-bottom: 50px;
 }
 .btn.read-more:hover {
   background-color: #121419;

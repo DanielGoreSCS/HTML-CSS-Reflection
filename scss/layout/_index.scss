@@ -37,18 +37,26 @@
     .d-xl-block {
         display: none!important;
     }
-    .col-xl {
-        &-8 {
-            flex: 0 0 auto;
-            width: 58.33333333%;
+    .col {
+        &-lg {
+            &-12.col-xl-5 {
+                flex: 0 0 auto;
+                width: 100%;
+            }
         }
-        &-5 {
-            flex: 0 0 auto;
-            width: 16.66666667%;
-        }
-        &-4 {
-            flex: 0 0 auto;
-            width: 41.66666667%;
+        &-xl {
+            &-8 {
+                flex: 0 0 auto;
+                width: 58.33333333%;
+            }
+            &-5 {
+                flex: 0 0 auto;
+                width: 16.66666667%;
+            }
+            &-4 {
+                flex: 0 0 auto;
+                width: 41.66666667%;
+            }
         }
     }
 }
@@ -60,18 +68,26 @@
     .d-xl-block {
         display: block!important;
     }
-    .col-xl {
-        &-8 {
-            flex: 0 0 auto;
-            width: 66.66666667%;
+    .col {
+        &-lg {
+            &-12.col-xl-5 {
+                flex: 0 0 auto;
+                width: 41.66666667%;
+            }
         }
-        &-5 {
-            flex: 0 0 auto;
-            width: 41.66666667%;
-        }
-        &-4 {
-            flex: 0 0 auto;
-            width: 33.33333333%;
+        &-xl {
+            &-8 {
+                flex: 0 0 auto;
+                width: 66.66666667%;
+            }
+            &-5 {
+                flex: 0 0 auto;
+                width: 41.66666667%;
+            }
+            &-4 {
+                flex: 0 0 auto;
+                width: 33.33333333%;
+            }
         }
     }
 }

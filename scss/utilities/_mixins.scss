@@ -61,6 +61,11 @@
         text-align: center;
         line-height: 1.313rem;
     }
+    @media (max-width: 1259px) {
+        & li a {
+            font-size: 0.8125rem;
+        }
+    }
 }
 
 @mixin hover--darken($colour) {
