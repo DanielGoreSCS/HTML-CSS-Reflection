@@ -55,9 +55,20 @@
             @include hover--darken($search);
         }
     }
+    &-default {
+        color: $white;
+        background-color: $search;
+        border-color: $search;
+    }
 }
 .hamburger {
     &:hover {
         @include hover--darken($primary);
+    }
+}
+
+@media (max-width: 576px) {
+    .spacer-xs {
+        margin-bottom: 30px;
     }
 }

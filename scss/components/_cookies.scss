@@ -1,0 +1,36 @@
+@use '../abstracts' as *;
+#consent-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $white;
+    z-index: 1000;
+    color: $text-grey;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 50%);
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 5px;
+    width: 90%;
+    & h3 {
+        padding: 15px 20px;
+        color: $primary;
+    }
+    & p {
+        padding: 20px;
+        & a {
+            color: $primary;
+        }
+    }
+    & .row {
+        padding: 19px 20px 20px;
+    }
+    & .btn {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px){
+    #consent-popup {
+        width: 600px;
+    }
+}
