@@ -4,8 +4,10 @@
 .btn {
     color: $white;
     text-transform: uppercase;
-    &:hover {
+    &:hover,
+    &:focus {
         color: $white;
+        box-shadow: none;
     }
     &.google {
         background-color: $google;
@@ -13,7 +15,8 @@
         font-size: 20px;
         margin-top: 20px;
         margin-right: 10px;
-        &:hover {
+        &:hover,
+        &:focus {
             @include hover--darken($google);
         }
     }
@@ -23,7 +26,8 @@
         padding: 10px 30px;
         font-size: 20px;
         margin-top: 20px;
-        &:hover {
+        &:hover,
+        &:focus {
             @include hover--darken($trustpilot);
         }
     }
@@ -32,26 +36,29 @@
         background-color: $primary-dark;
         padding: 10px 30px;
         font-size: 20px;
-        margin-bottom: 50px;
-        &:hover {
+        &:hover,
+        &:focus {
             @include hover--darken($primary-dark);
         }
     }
     &.form-submit {
         background-color: $primary;
-        &:hover {
+        &:hover,
+        &:focus {
             @include hover--darken($primary);
         }
     }
     &-support {
         background-color: $support;
-        &:hover {
+        &:hover,
+        &:focus {
             @include hover--darken($support);
         }
     }
     &-contact {
         background-color: $search;
-        &:hover {
+        &:hover,
+        &:focus {
             @include hover--darken($search);
         }
     }
@@ -62,13 +69,22 @@
     }
 }
 .hamburger {
-    &:hover {
+    &:hover,
+    &:focus {
         @include hover--darken($primary);
+    }
+    &:focus-visible {
+        outline: none;
     }
 }
 
 @media (max-width: 576px) {
     .spacer-xs {
         margin-bottom: 30px;
+    }
+}
+@media (max-width: 991px) {
+    .read-more {
+        margin-bottom: 50px;
     }
 }

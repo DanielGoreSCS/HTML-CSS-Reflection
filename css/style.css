@@ -562,7 +562,7 @@ label {
   flex-grow: 1;
 }
 .nav-gap {
-  gap: 10px;
+  gap: 1.5rem;
 }
 .nav-input-width {
   max-width: 240px;
@@ -849,6 +849,22 @@ label {
   border-radius: 15px;
   transition: 0.5s ease;
 }
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  gap: 13px;
+}
+.card-body .btn {
+  max-width: 223.73px;
+  margin: 0 auto;
+}
+.card-body .card-title,
+.card-body .card-text {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
 .card.card-latest-news {
   border-radius: 0;
   padding: 0;
@@ -867,6 +883,9 @@ label {
 }
 .card-footer img {
   margin-right: 16px;
+  border-radius: 50%;
+  width: 47px;
+  height: 47px;
 }
 .card-footer-text {
   font-size: 0.875rem;
@@ -880,6 +899,7 @@ label {
 }
 .card-news .btn {
   margin-top: 13px;
+  margin-left: 0;
 }
 .card-news .card-title {
   font-size: 1rem;
@@ -958,6 +978,12 @@ label {
   color: #CE4125;
 }
 
+@media (min-width: 1260px) {
+  .col-xxl-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+}
 #consent-popup {
   position: fixed;
   top: 50%;
@@ -988,6 +1014,53 @@ label {
   width: 100%;
 }
 
+.cookie-settings {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 8000;
+  overflow-y: auto;
+}
+.cookie-settings .h3 {
+  font-size: 1.625rem;
+}
+.cookie-settings .h4 {
+  font-size: 1rem;
+}
+.cookie-settings .h5, .cookie-settings h5 {
+  font-size: 14px;
+  color: #666;
+}
+.cookie-settings .h4,
+.cookie-settings .h5 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.cookie-settings .h4 a,
+.cookie-settings .h5 a {
+  color: #333645;
+  text-decoration: none;
+}
+.cookie-settings strong {
+  font-weight: 700;
+}
+.cookie-settings ul {
+  list-style: disc;
+  list-style-position: inside;
+}
+.cookie-settings .container {
+  margin-bottom: 60px;
+}
+.cookie-settings .buttons {
+  float: right;
+}
+
 @media (min-width: 768px) {
   #consent-popup {
     width: 600px;
@@ -997,8 +1070,9 @@ label {
   color: #fff;
   text-transform: uppercase;
 }
-.btn:hover {
+.btn:hover, .btn:focus {
   color: #fff;
+  box-shadow: none;
 }
 .btn.google {
   background-color: #4387F6;
@@ -1007,7 +1081,7 @@ label {
   margin-top: 20px;
   margin-right: 10px;
 }
-.btn.google:hover {
+.btn.google:hover, .btn.google:focus {
   background-color: #1268f4;
 }
 .btn.trustpilot {
@@ -1016,34 +1090,33 @@ label {
   font-size: 20px;
   margin-top: 20px;
 }
-.btn.trustpilot:hover {
+.btn.trustpilot:hover, .btn.trustpilot:focus {
   background-color: #008359;
 }
 .btn.read-more {
   background-color: #282b36;
   padding: 10px 30px;
   font-size: 20px;
-  margin-bottom: 50px;
 }
-.btn.read-more:hover {
+.btn.read-more:hover, .btn.read-more:focus {
   background-color: #121419;
 }
 .btn.form-submit {
   background-color: #333645;
 }
-.btn.form-submit:hover {
+.btn.form-submit:hover, .btn.form-submit:focus {
   background-color: #1d1f28;
 }
 .btn-support {
   background-color: #4183D7;
 }
-.btn-support:hover {
+.btn-support:hover, .btn-support:focus {
   background-color: #286abd;
 }
 .btn-contact {
   background-color: #999AA2;
 }
-.btn-contact:hover {
+.btn-contact:hover, .btn-contact:focus {
   background-color: #7e808a;
 }
 .btn-default {
@@ -1052,8 +1125,11 @@ label {
   border-color: #999AA2;
 }
 
-.hamburger:hover {
+.hamburger:hover, .hamburger:focus {
   background-color: #1d1f28;
+}
+.hamburger:focus-visible {
+  outline: none;
 }
 
 @media (max-width: 576px) {
@@ -1061,10 +1137,20 @@ label {
     margin-bottom: 30px;
   }
 }
+@media (max-width: 991px) {
+  .read-more {
+    margin-bottom: 50px;
+  }
+}
 .form-control {
   height: 47px;
   padding: 5px 15px;
   border-color: #ccc;
+}
+.form-control.form-control:focus {
+  border-color: #5bc0de;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08), 0 0 8px rgba(91, 192, 222, 0.6);
 }
 .form-check *:hover {
   cursor: pointer;
@@ -1078,6 +1164,7 @@ label {
 }
 .form-check-input:checked {
   background-color: #333645;
+  border-color: #333645;
 }
 .form-check-input:focus, .form-check-input:hover {
   border-color: #333645;

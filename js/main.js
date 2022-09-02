@@ -59,20 +59,7 @@ $(document).ready(function(){
   });
 
 //cookie popup
-const cookieStorage = {
-    getItem: (key) => {
-        const cookies = document.cookie
-            .split(';')
-            .map(cookie => cookie.split('='))
-            .reduce((acc, [key, value]) => ({...acc, [key.trim()]: value}), {});
-        return cookies[key];
-    },
-    setItem: (key, value) => {
-        document.cookie = `${key}=${value}`;
-    },
-};
-
-const storageType = cookieStorage;
+const storageType = localStorage;
 const consentPropertyName = 'jdc_consent';
 
 const shouldShowPopup = () => !storageType.getItem(consentPropertyName);
@@ -81,16 +68,27 @@ const saveToStorage = () => storageType.setItem(consentPropertyName, true);
 window.onload = () => {
     const consentPopup = $("#consent-popup");
     const acceptBtn = $("#accept");
+    const cookieSettings = $(".cookie-settings");
+    const settingsBtn = $("#cookie-settings");
+    const acceptBtn2 = $("#Accept2");
 
     const acceptFn = event => {
         saveToStorage(storageType);
         consentPopup.addClass("d-none");
+        cookieSettings.addClass("d-none");
         $wrapperFade.removeClass("show darken");
         $("body").removeAttr("style");
         $wrapper.removeAttr("style");
     }
 
     acceptBtn.on("click", acceptFn);
+    acceptBtn2.on("click", acceptFn);
+    
+    settingsBtn.on("click", () => {
+        cookieSettings.css({"display":"block"})
+        consentPopup.addClass("d-none");
+
+    });
 
     if(shouldShowPopup()) {
         consentPopup.removeClass("d-none");
