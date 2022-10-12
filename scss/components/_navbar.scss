@@ -114,6 +114,7 @@
     right: 0;
     z-index: 900;
     &-top{
+        box-shadow: 0 5px 35px rgb(0 0 0 / 10%);
         &.slideDown {
             animation: slideDown 0.4s ease-in-out forwards;
         }

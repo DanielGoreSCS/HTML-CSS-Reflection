@@ -760,6 +760,9 @@ label {
   right: 0;
   z-index: 900;
 }
+.sticky-top {
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+}
 .sticky-top.slideDown {
   animation: slideDown 0.4s ease-in-out forwards;
 }
@@ -1000,6 +1003,7 @@ label {
 #consent-popup h3 {
   padding: 15px 20px;
   color: #333645;
+  border-bottom: 1px solid #e5e5e5;
 }
 #consent-popup p {
   padding: 20px;
@@ -1009,6 +1013,7 @@ label {
 }
 #consent-popup .row {
   padding: 19px 20px 20px;
+  border-top: 1px solid #e5e5e5;
 }
 #consent-popup .btn {
   width: 100%;
@@ -1123,6 +1128,15 @@ label {
   color: #fff;
   background-color: #999AA2;
   border-color: #999AA2;
+}
+.btn-default:hover, .btn-default:focus {
+  background-color: #7e808a;
+}
+.btn-light {
+  color: #aaa;
+}
+.btn-light:hover, .btn-light:focus {
+  color: #aaa;
 }
 
 .hamburger:hover, .hamburger:focus {
@@ -1428,9 +1442,15 @@ label {
 .fade-wrapper.slideLeft {
   animation: slideLeft 0.4s ease-in-out forwards;
 }
+.fade-wrapper.slideRight {
+  animation: slideRight 0.4s ease-in-out forwards;
+}
 
 .wrapper.slideLeft {
   animation: slideLeft 0.4s ease-in-out forwards;
+}
+.wrapper.slideRight {
+  animation: slideRight 0.4s ease-in-out forwards;
 }
 
 @keyframes slideLeft {
@@ -1439,6 +1459,14 @@ label {
   }
   100% {
     transform: translateX(-275px);
+  }
+}
+@keyframes slideRight {
+  0% {
+    transform: translateX(-275px);
+  }
+  100% {
+    transform: initial;
   }
 }
 @media (min-width: 992px) {

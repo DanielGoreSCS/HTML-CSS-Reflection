@@ -14,6 +14,7 @@
     & h3 {
         padding: 15px 20px;
         color: $primary;
+        border-bottom: 1px solid $border;
     }
     & p {
         padding: 20px;
@@ -23,6 +24,7 @@
     }
     & .row {
         padding: 19px 20px 20px;
+        border-top: 1px solid $border;
     }
     & .btn {
         width: 100%;

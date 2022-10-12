@@ -5,21 +5,27 @@ $wrapperFade = $(".fade-wrapper");
 let toggle = 0;
 $hamburger.on("click", () => {
     $hamburger.toggleClass("is-active");
-    $(".sidebar").toggleClass("show");
-    $wrapperFade.toggleClass("show slideLeft");
-    $wrapper.toggleClass("slideLeft");
+    $(".sidebar").addClass("show");
+    $wrapperFade.addClass("show slideLeft");
+    $wrapper.addClass("slideLeft");
     $("body").css({"overflow":"hidden"});
     $wrapper.css({"overflow":"scroll"});
     toggle = 1;
 });
 $wrapperFade.on("click", () => {
     if (toggle != 0) {
-        $hamburger.toggleClass("is-active");
-        $(".sidebar").toggleClass("show");
-        $wrapperFade.toggleClass("show slideLeft");
-        $wrapper.toggleClass("slideLeft");
-        $("body").removeAttr("style");
-        $wrapper.removeAttr("style");
+        $hamburger.removeClass("is-active");
+        
+        $wrapperFade.addClass("slideRight");
+        $wrapper.addClass("slideRight");
+        setTimeout(() => {
+            $(".sidebar").removeClass("show");
+            $wrapperFade.removeClass("show slideLeft slideRight");
+            $wrapper.removeClass("show slideLeft slideRight");
+            $("body").removeAttr("style");
+            $wrapper.removeAttr("style");
+        }, 400)
+        
         toggle = 0;
     }
 });
@@ -71,6 +77,7 @@ window.onload = () => {
     const cookieSettings = $(".cookie-settings");
     const settingsBtn = $("#cookie-settings");
     const acceptBtn2 = $("#Accept2");
+    const cancelBtn = $("#Cancel");
 
     const acceptFn = event => {
         saveToStorage(storageType);
@@ -90,10 +97,36 @@ window.onload = () => {
 
     });
 
+    cancelBtn.on("click", () => {
+        cookieSettings.css({"display":"none"})
+        consentPopup.removeClass("d-none");
+    });
+
     if(shouldShowPopup()) {
         consentPopup.removeClass("d-none");
         $wrapperFade.addClass("show darken");
         $("body").css({"overflow":"hidden"});
         $wrapper.css({"overflow":"scroll"});
     }
+
+    //cookie toggle buttons
+    const functionalCookieOn = $("#cookie--enable1");
+    const functionalCookieOff = $("#cookie--disable1");
+    const analyticCookieOn = $("#cookie--enable2");
+    const analyticCookieOff = $("#cookie--disable2");
+
+    const functionalCookieToggle = event => {
+        functionalCookieOn.toggleClass("btn-light web-des");
+        functionalCookieOff.toggleClass("btn-light web-des");
+    }
+
+    const analyticCookieToggle = event => {
+        analyticCookieOn.toggleClass("btn-light web-des");
+        analyticCookieOff.toggleClass("btn-light web-des");
+    }
+
+    functionalCookieOn.on("click", functionalCookieToggle);
+    functionalCookieOff.on("click", functionalCookieToggle);
+    analyticCookieOn.on("click", analyticCookieToggle);
+    analyticCookieOff.on("click", analyticCookieToggle);
 }

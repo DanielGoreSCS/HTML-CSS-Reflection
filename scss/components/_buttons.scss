@@ -66,6 +66,17 @@
         color: $white;
         background-color: $search;
         border-color: $search;
+        &:hover,
+        &:focus {
+            @include hover--darken($search);
+        }
+    }
+    &-light {
+        color: $btn-light;
+        &:hover,
+        &:focus {
+            color: $btn-light;
+        }
     }
 }
 .hamburger {

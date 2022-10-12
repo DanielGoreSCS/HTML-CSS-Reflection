@@ -104,11 +104,17 @@
     &.slideLeft {
         animation: slideLeft 0.4s ease-in-out forwards;
     }
+    &.slideRight {
+        animation: slideRight 0.4s ease-in-out forwards;
+    }
 }
 
 .wrapper {
     &.slideLeft {
         animation: slideLeft 0.4s ease-in-out forwards;
+    }
+    &.slideRight {
+        animation: slideRight 0.4s ease-in-out forwards;
     }
 }
 
@@ -118,6 +124,15 @@
     }
     100% {
         transform: translateX(-275px);
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-275px);
+    }
+    100% {
+        transform: initial;
     }
 }
 
