@@ -53,7 +53,7 @@
         flex-grow: 1;
     }
     &-gap {
-        gap: 10px;
+        gap: 1.5rem;
     }
     &-input-width {
         max-width: 240px;
@@ -105,6 +105,47 @@
 
 .inner div .row {
     --bs-gutter-x: 0;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 900;
+    &-top{
+        box-shadow: 0 5px 35px rgb(0 0 0 / 10%);
+        &.slideDown {
+            animation: slideDown 0.4s ease-in-out forwards;
+        }
+        &.slideUp {
+            animation: slideUp 0.4s ease-in-out forwards;
+        }
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    20% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(0%);
+    }
+    20% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
 }
 
 @media (min-width: 455px) {

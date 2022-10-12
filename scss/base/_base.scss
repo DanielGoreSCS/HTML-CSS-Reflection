@@ -11,6 +11,10 @@ ul {
     padding: 0;
 }
 
+main {
+    background-color: $white;
+}
+
 .section {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -62,8 +66,14 @@ footer {
     background-color: $primary;
     color: $white;
 }
-.slider {
-    height: 170px;
+.owl-carousel {
+    overflow: hidden;
+    & .owl-item {
+        @include coloured-hover;
+        & img {
+            width: initial;
+        }
+    }
     & ul {
         width: 100%;
         display: inline-flex;
@@ -149,7 +159,7 @@ header {
     }
 }
 .inner {
-    margin: 20px 0;
+    padding: 20px 0;
     &-width {
         width: 63px;
     }

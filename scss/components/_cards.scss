@@ -7,6 +7,22 @@
     box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     transition: .5s ease;
+    &-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0;
+        gap: 13px;
+        & .btn {
+            max-width: 223.73px;
+            margin: 0 auto;
+        }
+        & .card-title,
+        .card-text {
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+    }
     &.card-latest-news {
         border-radius: 0;
         padding: 0;
@@ -24,6 +40,9 @@
         border-top: 1px solid $grey;
         & img {
             margin-right: 16px;
+            border-radius: 50%;
+            width: 47px;
+            height: 47px;
         }
         &-text {
             font-size: 0.875rem;
@@ -38,6 +57,7 @@
         border-radius: 0 0 3px 3px;
         & .btn {
             margin-top: 13px;
+            margin-left: 0;
         }
         & .card-title {
             font-size: 1rem;
@@ -121,5 +141,12 @@
             background-color: $white;
             color: $developer-training;
         }
+    }
+}
+
+@media (min-width: 1260px) {
+    .col-xxl-3 {
+        flex: 0 0 auto;
+        width: 25%;
     }
 }

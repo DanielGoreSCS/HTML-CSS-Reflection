@@ -3,6 +3,9 @@ $primary-dark: darken($primary, 5%);
 $white: #fff;
 $quote-author: #A3A8AC;
 $grey: #ccc;
+$text-grey: #666;
+$focus: #5bc0de;
+$btn-light: #aaa;
 
 $support: #4183D7;
 
@@ -41,6 +44,8 @@ $social-media: (
     "linkedin": #0077b5
 );
 $form: #DDD;
+
+$border: #e5e5e5;
 .besp-soft {
     background-color: $bespoke-software;
 }
