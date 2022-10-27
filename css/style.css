@@ -315,6 +315,7 @@ header img {
 }
 
 .inner {
+  background-color: #fff;
   padding: 20px 0;
 }
 .inner-width {
@@ -1061,6 +1062,7 @@ label {
 }
 .cookie-settings .container {
   margin-bottom: 60px;
+  margin-top: 20px;
 }
 .cookie-settings .buttons {
   float: right;

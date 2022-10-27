@@ -38,16 +38,23 @@ $(".nav-item").hover(function () {
 
 //Sticky
 var lastScrollTop = 0;
-$header = $("header");
+$stickyHeader = $("#sticky-header");
+//$header = $("header");
 $(window).scroll(function(event){
    var st = $(this).scrollTop();
-   if (st < lastScrollTop){
+   if(st==0) {
+        //hide sticky
+        $stickyHeader.addClass("d-none");
+   }else if (st < lastScrollTop){
        // upscroll code
-       $header.addClass("sticky-top slideDown");
+       $stickyHeader.removeClass("d-none");
+       $stickyHeader.addClass("sticky-top slideDown");
    } else {
       // downscroll code
-      $header.addClass("slideUp");
-      setTimeout(() => $header.removeClass("sticky-top slideDown slideUp"),400);
+      $stickyHeader.addClass("slideUp");
+      setTimeout(() => {$stickyHeader.removeClass("sticky-top slideDown slideUp");
+        $stickyHeader.addClass("d-none");
+    },400);
    }
    lastScrollTop = st;
 });
