@@ -200,6 +200,32 @@ footer a {
     }
 }
 
+.contact {
+    & a {
+        color: map-get($articles, "1");
+    }
+}
+
+.out-of-hours {
+    & a {
+        color: $primary;
+    }
+    & h4 {
+        display: initial;
+    }
+}
+
+.accordion {
+    &-hidden {
+        display: none;
+    }
+}
+
+.map {
+    max-width: 100%;
+    overflow: hidden;
+}
+
 @media (max-width: 991px) {
     .clients {
         & .list {

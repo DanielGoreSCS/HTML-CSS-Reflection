@@ -58,6 +58,14 @@
         color: $primary;
     }
 }
-.required {
-    color: $required;
+.danger {
+    color: $danger;
+}
+.contact-form {
+    background-color: $contact-form;
+    padding: 30px;
+    border-radius: 10px;
+    & textarea {
+        height: 100px;
+    }
 }

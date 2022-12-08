@@ -142,6 +142,35 @@
             color: $developer-training;
         }
     }
+    &-offices {
+        border-radius: 0;
+        padding: 0;
+        border: none;
+        & .card-office {
+            text-align: left;
+            padding: 30px;
+            border: 1px solid $grey;
+            border-top: 0;
+            border-radius: 0 0 3px 3px;
+            & .btn {
+                margin-left: 0;
+            }
+            & .card-title {
+                font-size: 1rem;
+            }
+        }
+        & .tel {
+            color: map-get($map: $articles, $key: "1");
+            font-weight: 700;
+            margin-bottom: 0px;
+        }
+        & .btn {
+            background-color: map-get($map: $articles, $key: "1");
+        }
+        & .map {
+            width: 100%;
+        }
+    }
 }
 
 @media (min-width: 1260px) {

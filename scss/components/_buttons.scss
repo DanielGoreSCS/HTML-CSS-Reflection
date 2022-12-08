@@ -89,6 +89,16 @@
     }
 }
 
+.contact-form .btn {
+    color: $white;
+    background-color: map-get($map: $articles, $key: "1");
+    width: 149px;
+    &:hover,
+    &:focus {
+        @include hover--darken(map-get($map: $articles, $key: "1"));
+    }
+}
+
 @media (max-width: 576px) {
     .spacer-xs {
         margin-bottom: 30px;
