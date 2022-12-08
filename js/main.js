@@ -52,6 +52,19 @@ $(window).scroll(function(event){
    lastScrollTop = st;
 });
 
+//Accordion
+$accordion = $(".accordion");
+$accordionHidden = $(".accordion-hidden");
+$accordion.on("click", () => {
+    if ($accordionHidden.css("display") == "none") {
+        $accordionHidden.css("display", "block");
+    }
+    else {
+        $accordionHidden.css("display", "none");
+    }
+    
+});
+
 $(document).ready(function(){
     $(".owl-carousel").owlCarousel({
         margin: 100,
@@ -62,7 +75,65 @@ $(document).ready(function(){
         autoplayHoverPause: true,
         loop: true
     });
-  });
+});
+
+//Add error border and error message
+function setError (i) {
+    $($form[i]).css({"border": "solid 1px red", "margin-top": "0"});
+}
+//Remove error border and error message
+function removeError (i) {
+    $($form[i]).removeAttr("style");
+}
+
+//Check if form field is valid
+function validateForm(event) {
+    $form = $(".form-control");
+    const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    let errorCount = 0;
+    for (let i = 0; i < $form.length; i++) {
+        if ($form[i].classList.contains("required")) {
+            //If form field empty
+            if ($form[i].value === "") {
+                //Call setError
+                if ($($form[i]).attr("id") === "contact-name" || $($form[i]).attr("id") === "contact-phone"
+                || $($form[i]).attr("id") === "contact-email" || $($form[i]).attr("id") === "contact-subject"
+                || $($form[i]).attr("id") === "contact-message") {
+                    errorCount += 1;
+                    setError(i);
+                }
+                
+            }
+            else if ($($form[i]).attr("id") === "contact-email") {
+                if (emailRegex.test($form[i].value) !== true) {
+                    //Call setError
+                    errorCount += 1;
+                    if ($form[i].validationMessage !== "") {
+                        setError(i, $form[i].validationMessage);
+                    }
+                    else {
+                        setError(i);
+                    }
+                }
+                else {
+                    removeError(i);
+                }
+            }
+            else {
+                removeError(i);
+            }
+        }
+    }
+    if (errorCount === 0) {
+        // for (let i = 0; i < $form.length; i++) {
+        //     $form[i].value = "";
+        // }
+        alert("The form was submitted successfully.");
+        //submits form
+        $(".contact-form").submit();
+    }
+    console.log(errorCount);
+}
 
 //cookie popup
 const storageType = localStorage;

@@ -124,6 +124,17 @@
     }
 }
 
+.page-head {
+    & h1 {
+        margin-bottom: 0px;
+    }
+}
+
+.breadcrumb-container {
+    box-shadow: 0 5px 35px rgb(0 0 0 / 10%);
+    padding: 14px 0 13px;
+}
+
 @keyframes slideDown {
     0% {
         transform: translateY(-100%);
@@ -157,5 +168,19 @@
 @media (min-width: 775px) {
     .inner div .row {
         --bs-gutter-x: 1.5rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .page-head {
+        background-color: $primary;
+        padding: 24px 0;
+        margin-top: -20px;
+        & h1 {
+            color: $white;
+        }
+    }
+    .breadcrumb-container {
+        border-top: 1px solid $primary;
     }
 }

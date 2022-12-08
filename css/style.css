@@ -315,6 +315,7 @@ header img {
 }
 
 .inner {
+  background-color: #fff;
   padding: 20px 0;
 }
 .inner-width {
@@ -354,6 +355,26 @@ footer a:hover {
 }
 .social-media a.linkedin:hover {
   background-color: #0077b5;
+}
+
+.contact a {
+  color: #926fb1;
+}
+
+.out-of-hours a {
+  color: #333645;
+}
+.out-of-hours h4 {
+  display: initial;
+}
+
+.accordion-hidden {
+  display: none;
+}
+
+.map {
+  max-width: 100%;
+  overflow: hidden;
 }
 
 @media (max-width: 991px) {
@@ -770,6 +791,15 @@ label {
   animation: slideUp 0.4s ease-in-out forwards;
 }
 
+.page-head h1 {
+  margin-bottom: 0px;
+}
+
+.breadcrumb-container {
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+  padding: 14px 0 13px;
+}
+
 @keyframes slideDown {
   0% {
     transform: translateY(-100%);
@@ -800,6 +830,20 @@ label {
 @media (min-width: 775px) {
   .inner div .row {
     --bs-gutter-x: 1.5rem;
+  }
+}
+@media (max-width: 991px) {
+  .page-head {
+    background-color: #333645;
+    padding: 24px 0;
+    margin-top: -20px;
+  }
+  .page-head h1 {
+    color: #fff;
+  }
+
+  .breadcrumb-container {
+    border-top: 1px solid #333645;
   }
 }
 .fa-phone-volume {
@@ -980,6 +1024,35 @@ label {
   background-color: #fff;
   color: #CE4125;
 }
+.card-offices {
+  border-radius: 0;
+  padding: 0;
+  border: none;
+}
+.card-offices .card-office {
+  text-align: left;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-top: 0;
+  border-radius: 0 0 3px 3px;
+}
+.card-offices .card-office .btn {
+  margin-left: 0;
+}
+.card-offices .card-office .card-title {
+  font-size: 1rem;
+}
+.card-offices .tel {
+  color: #926fb1;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+.card-offices .btn {
+  background-color: #926fb1;
+}
+.card-offices .map {
+  width: 100%;
+}
 
 @media (min-width: 1260px) {
   .col-xxl-3 {
@@ -1061,6 +1134,7 @@ label {
 }
 .cookie-settings .container {
   margin-bottom: 60px;
+  margin-top: 20px;
 }
 .cookie-settings .buttons {
   float: right;
@@ -1146,6 +1220,15 @@ label {
   outline: none;
 }
 
+.contact-form .btn {
+  color: #fff;
+  background-color: #926fb1;
+  width: 149px;
+}
+.contact-form .btn:hover, .contact-form .btn:focus {
+  background-color: #79539a;
+}
+
 @media (max-width: 576px) {
   .spacer-xs {
     margin-bottom: 30px;
@@ -1207,8 +1290,17 @@ label {
   color: #333645;
 }
 
-.required {
+.danger {
   color: #D24D57;
+}
+
+.contact-form {
+  background-color: #e6e7e9;
+  padding: 30px;
+  border-radius: 10px;
+}
+.contact-form textarea {
+  height: 100px;
 }
 
 /*!
